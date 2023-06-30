@@ -1,0 +1,3020 @@
+# DO NOT EDIT MANUALLY! FW2 VERSION
+DEFINITION <configdef43022C1.hdf>
+ENTRY "Local Name"
+{
+    "Name" = "CYW43022C1 UART WLCSP dLNA"
+}
+ENTRY "Config Data Version"
+{
+}
+ENTRY "Function Call"
+{
+    "Address" = 0x001303f1
+}
+ENTRY "Data" = "rm_SpecSupportBitMask"
+{
+    "Address"=0x002031bc
+    "Data"=
+    COMMENTED_BYTES
+    {
+         <hex>
+         F7 87
+    } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "fw_config_dLNA_enable"
+{
+    "Address" = 0x0020096f
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+         01
+    } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "max_wbs_active_links"
+{
+    "Address" = 0x00205228
+    "Data" =
+    COMMENTED_BYTES
+    {
+        <hex>
+        01
+    } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "max_wbs_simul_service_links"
+{
+    "Address" = 0x00205229
+    "Data" =
+    COMMENTED_BYTES
+    {
+        <hex>
+        01
+    } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "MLSE para"
+{
+    "Address" = 0x002045d8
+    "Data" =
+    COMMENTED_BYTES
+    {
+        <hex>
+        00
+        00
+        01
+        00
+    } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "Enable_BPF_cal"
+{
+    "Address" = 0x0020095b
+    "Data" =
+    COMMENTED_BYTES
+    {
+        <hex>
+        01
+    } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "Enable_RcalOverTemp"
+{
+    "Address" = 0x00200960
+    "Data" =
+    COMMENTED_BYTES
+    {
+        <hex>
+        01
+    } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "g_minExistingConnNumForBtIsrClockIncreasement"
+{
+    "Address" = 0x002162d0
+    "Data" =
+    COMMENTED_BYTES
+    {
+        <hex>
+        01
+    } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "Default_TxPath"
+{
+    "Address" = 0x0020096d
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+        01
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "Default_RxPath"
+{
+    "Address" = 0x0020096e
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+            01
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "Rx switching lookup table"
+{
+    "Address" = 0x00208c8a
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+         a8 01 41 00 00 06 00 00 00 02
+         ac 01 41 00 00 06 00 00 00 02
+         b0 01 41 00 00 06 00 00 00 02
+         b4 01 41 00 00 06 00 00 00 02
+         00 00 00 00 00 00 00 00 00 00
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "TX Switching Table"
+{
+    "Address" = 0x00208cda
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+         a8 01 41 00 38 00 00 00 18 00 28 00
+         ac 01 41 00 38 00 00 00 18 00 28 00
+         b0 01 41 00 38 00 00 00 18 00 28 00
+         b4 01 41 00 38 00 00 00 18 00 28 00
+         00 00 00 00 00 00 00 00 00 00 00 00
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "Register settings between different platforms"
+{
+    "Address" = 0x0020298c
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+         d4 08 64 00 ff ff ff ff 44 00 00 00 44 00 00 00 00 00 00 00
+         d8 08 64 00 ff ff ff ff 00 00 00 00 00 00 00 00 14 00 00 00
+         fc 08 64 00 ff ff ff ff 10 00 00 00 10 00 00 00 00 00 00 00
+         00 09 64 00 ff ff ff ff 00 00 00 00 00 00 00 00 0a 00 00 00
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "TXHP (TX13/TX20) switching table"
+{
+    "Address" = 0x00208d8a
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+          00 00 00 00 00 00 00 00 00 00
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "TXLP (TX0) switching table"
+{
+    "Address" = 0x00208d3a
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+           00 00 00 00 00 00 00 00 00 00
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "Mode dependent (BDR/EDR/LE/LE2) table"
+{
+    "Address" = 0x00208dda
+    "Data" =
+    COMMENTED_BYTES
+    {
+          <hex>
+         b8 07 60 00 E0 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 D0 00 00 00 D0 00 00 00 D0 00 00 00 D0 00 00 00 90 00 00 00 90 00 00 00 90 00 00 00 90 00 00 00
+         c0 07 60 00 E0 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 D0 00 00 00 D0 00 00 00 D0 00 00 00 D0 00 00 00 90 00 00 00 90 00 00 00 90 00 00 00 90 00 00 00
+         c8 07 60 00 E0 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 D0 00 00 00 D0 00 00 00 D0 00 00 00 D0 00 00 00 90 00 00 00 90 00 00 00 90 00 00 00 90 00 00 00
+         d0 07 60 00 E0 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 D0 00 00 00 D0 00 00 00 D0 00 00 00 D0 00 00 00 90 00 00 00 90 00 00 00 90 00 00 00 90 00 00 00
+         d8 07 60 00 E0 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 D0 00 00 00 D0 00 00 00 D0 00 00 00 D0 00 00 00 90 00 00 00 90 00 00 00 90 00 00 00 90 00 00 00
+         bc 07 60 00 E0 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00
+         c4 07 60 00 E0 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00
+         cc 07 60 00 E0 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00
+         d4 07 60 00 E0 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00
+         dc 07 60 00 E0 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 40 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00 30 00 00 00
+         50 0A 60 00 FF FF 00 00 0F 00 00 00 0F 00 00 00 0F 00 00 00 0F 00 00 00 07 00 00 00 0F 00 00 00 09 00 00 00 09 00 00 00 0F 00 00 00 0D 00 00 00 0F 00 00 00 0F 00 00 00
+         38 09 60 00 FF FF 00 00 08 00 00 00 08 00 00 00 08 00 00 00 08 00 00 00 08 00 00 00 08 00 00 00 0A 00 00 00 0A 00 00 00 08 00 00 00 08 00 00 00 0A 00 00 00 0A 00 00 00
+         40 09 60 00 FF FF 00 00 20 00 00 00 20 00 00 00 20 00 00 00 20 00 00 00 20 00 00 00 20 00 00 00 28 00 00 00 28 00 00 00 20 00 00 00 20 00 00 00 28 00 00 00 28 00 00 00
+         44 09 60 00 FF FF 00 00 08 00 00 00 08 00 00 00 08 00 00 00 08 00 00 00 08 00 00 00 08 00 00 00 0A 00 00 00 0A 00 00 00 08 00 00 00 08 00 00 00 0A 00 00 00 0A 00 00 00
+         4c 09 60 00 FF FF 00 00 08 00 00 00 08 00 00 00 08 00 00 00 08 00 00 00 08 00 00 00 08 00 00 00 0A 00 00 00 0A 00 00 00 08 00 00 00 08 00 00 00 0A 00 00 00 0A 00 00 00
+         50 09 60 00 FF FF 00 00 20 00 00 00 20 00 00 00 20 00 00 00 20 00 00 00 20 00 00 00 20 00 00 00 28 00 00 00 28 00 00 00 20 00 00 00 20 00 00 00 28 00 00 00 28 00 00 00
+         c8 00 41 00 FF FF 00 00 c5 c0 00 00 c5 c0 00 00 c5 c0 00 00 c5 c0 00 00 c5 E8 00 00 c5 E8 00 00 c5 E8 00 00 c5 E8 00 00 c5 E8 00 00 c5 E8 00 00 c5 E8 00 00 c5 E8 00 00
+         c0 04 41 00 FF FF 00 00 02 80 00 00 00 80 00 00 00 80 00 00 00 80 00 00 02 80 00 00 00 80 00 00 00 80 00 00 00 80 00 00 02 80 00 00 00 80 00 00 00 80 00 00 00 80 00 00
+         d8 03 60 00 FF FF 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 33 00 00 00 88 00 00 00 88 00 00 00
+         8c 03 41 00 FF FF 00 00 45 ac 00 00 85 ac 00 00 45 ac 00 00 45 ac 00 00 85 ac 00 00 85 ac 00 00 45 ac 00 00 45 ac 00 00 45 ac 00 00 85 ac 00 00 45 ac 00 00 45 ac 00 00
+         98 08 60 00 FF 00 00 00 0D 00 00 00 0D 00 00 00 0D 00 00 00 0D 00 00 00 0D 00 00 00 0D 00 00 00 0D 00 00 00 0D 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00
+         54 00 60 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 F0 00 00 00 F0 00 00 00 F0 00 00 00 F0 00 00 00
+         98 02 60 00 FF FF 00 00 07 00 00 00 07 00 00 00 07 00 00 00 07 00 00 00 07 00 00 00 07 00 00 00 0E 00 00 00 0E 00 00 00 0F 00 00 00 0F 00 00 00 0F 00 00 00 0F 00 00 00
+         C4 02 60 00 FF 00 00 00 07 00 00 00 07 00 00 00 07 00 00 00 07 00 00 00 07 00 00 00 07 00 00 00 07 00 00 00 07 00 00 00 0F 00 00 00 0F 00 00 00 0F 00 00 00 0F 00 00 00
+         A8 07 60 00 FF 00 00 00 02 00 00 00 02 00 00 00 02 00 00 00 02 00 00 00 02 00 00 00 02 00 00 00 02 00 00 00 02 00 00 00 32 00 00 00 32 00 00 00 32 00 00 00 32 00 00 00
+         7C 00 60 00 FF 00 00 00 28 00 00 00 28 00 00 00 28 00 00 00 28 00 00 00 28 00 00 00 28 00 00 00 28 00 00 00 28 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00
+         6C 00 60 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 00 00 00 80 00 00 00 80 00 00 00 80 00 00 00
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "TCA Zone 0 Temperature Mode dependent (BDR/EDR/LE/LE2) table"
+{
+    "Address" = 0x00205edc
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+         EC 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 76 00 00 00 70 00 00 00 7F 00 00 00 7F 00 00 00
+         F0 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 76 00 00 00 70 00 00 00 7F 00 00 00 7F 00 00 00
+         F4 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 76 00 00 00 70 00 00 00 7F 00 00 00 7F 00 00 00
+         88 0B 60 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+         54 09 60 00 FF FF 00 00 32 00 00 00 32 00 00 00 32 00 00 00 32 00 00 00 32 00 00 00 34 00 00 00 32 00 00 00 32 00 00 00 3d 00 00 00 14 00 00 00 3d 00 00 00 3d 00 00 00
+         E0 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         E4 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         E8 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         B0 07 60 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3f 00 00 00 3f 00 00 00 3f 00 00 00 3f 00 00 00
+         AC 07 60 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3f 00 00 00 3f 00 00 00 3f 00 00 00 3f 00 00 00
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "TCA Zone 1 Temperature Mode dependent (BDR/EDR/LE/LE2) table"
+{
+    "Address" = 0x002065dc
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+         EC 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         F0 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         F4 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         88 0B 60 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+         54 09 60 00 FF FF 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3F 00 00 00 3D 00 00 00 3D 00 00 00 3d 00 00 00 14 00 00 00 3d 00 00 00 3d 00 00 00
+         E0 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         E4 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         E8 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         B0 07 60 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3e 00 00 00 3e 00 00 00 3e 00 00 00 3e 00 00 00
+         AC 07 60 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 31 00 00 00 31 00 00 00 31 00 00 00 31 00 00 00
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "TCA Zone 2 Temperature Mode dependent (BDR/EDR/LE/LE2) table"
+{
+    "Address" = 0x00206cdc
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+         EC 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         F0 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         F4 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         88 0B 60 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+         54 09 60 00 FF FF 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3F 00 00 00 3D 00 00 00 3D 00 00 00 3d 00 00 00 14 00 00 00 3d 00 00 00 3d 00 00 00
+         E0 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         E4 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         E8 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         B0 07 60 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3e 00 00 00 3e 00 00 00 3e 00 00 00 3e 00 00 00
+         AC 07 60 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 31 00 00 00 31 00 00 00 31 00 00 00 31 00 00 00
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "TCA Zone 3 Temperature Mode dependent (BDR/EDR/LE/LE2) table"
+{
+    "Address" = 0x002073dc
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+         EC 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         F0 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         F4 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         88 0B 60 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+         54 09 60 00 FF FF 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3F 00 00 00 3D 00 00 00 3D 00 00 00 3d 00 00 00 14 00 00 00 3d 00 00 00 3d 00 00 00
+         E0 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         E4 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         E8 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         B0 07 60 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3e 00 00 00 3e 00 00 00 3e 00 00 00 3e 00 00 00
+         AC 07 60 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 31 00 00 00 31 00 00 00 31 00 00 00 31 00 00 00
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "TCA Zone 4 Temperature Mode dependent (BDR/EDR/LE/LE2) table"
+{
+    "Address" = 0x00207adc
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+         EC 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         F0 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         F4 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         88 0B 60 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+         54 09 60 00 FF FF 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3F 00 00 00 3D 00 00 00 3D 00 00 00 3d 00 00 00 14 00 00 00 3d 00 00 00 3d 00 00 00
+         E0 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         E4 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         E8 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00 88 00 00 00
+         B0 07 60 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3e 00 00 00 3e 00 00 00 3e 00 00 00 3e 00 00 00
+         AC 07 60 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 31 00 00 00 31 00 00 00 31 00 00 00 31 00 00 00
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "TCA Zone 5 Temperature Mode dependent (BDR/EDR/LE/LE2) table"
+{
+    "Address" = 0x002081dc
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+         EC 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         F0 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         F4 07 60 00 0F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 2F 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00 70 00 00 00
+         88 0B 60 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+         54 09 60 00 FF FF 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3D 00 00 00 3F 00 00 00 3D 00 00 00 3D 00 00 00 3d 00 00 00 14 00 00 00 3d 00 00 00 3d 00 00 00
+         E0 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00
+         E4 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00
+         E8 07 60 00 FF 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 84 00 00 00 88 00 00 00 84 00 00 00 88 00 00 00 88 00 00 00
+         B0 07 60 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 36 00 00 00 36 00 00 00 36 00 00 00 36 00 00 00
+         AC 07 60 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 38 00 00 00 38 00 00 00 38 00 00 00 38 00 00 00
+         00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "g_bt_vendor_config"
+{
+    "Address" = 0x00204acc
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+         03 00 00 00
+    }END_COMMENTED_BYTES
+}
+ENTRY "PMU Config Flags"
+{
+    "PMU config flags"= 0xD02
+}
+ENTRY "BT Sleep Configuration"
+{
+    "BT Sleep Enable"= 0x1
+    "BT Short Sleep Enable"= 0x0
+}
+ENTRY "PMU Crystal Warm up Time"
+{
+    "Crystal warm up time" = 1600
+}
+ENTRY "Data" = "bcsTaskWakeupTime"
+{
+    "Address" = 0x00203170
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+         6F 04
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "g_reduce_sleep_time_for_clock_switch"
+{
+    "Address" = 0x00202f48
+    "Data" =
+    COMMENTED_BYTES
+    {
+        <hex>
+        00 00 00 00
+    } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "pmu_pds_min_sleep_lpo_cycles"
+{
+    "Address" = 0x0020422a
+    "Data" =
+    COMMENTED_BYTES
+    {
+        <hex>
+        07 00
+    } END_COMMENTED_BYTES
+}
+ENTRY "PMU register w/r"
+{
+   "Record Subtype" = 4
+   "Num entries" = 14
+   "Register address[0]" = 0x00640838
+   "Bit field mask[0]" = 0x00000003
+   "Value[0]" = 0x00000003
+   "Register address[1]" = 0x00654010
+   "Bit field mask[1]" = 0xFFFAAFFF
+   "Value[1]" = 0xfe3ea3d9
+   "Register address[2]" = 0x00654018
+   "Bit field mask[2]" = 0xFF7E00FE
+   "Value[2]" = 0x00281000
+   "Register address[3]" = 0x00654024
+   "Bit field mask[3]" = 0x600FF
+   "Value[3]" = 0x0004464A
+   "Register address[4]" = 0x0065402c
+   "Bit field mask[4]" = 0xFFC0C0E7
+   "Value[4]" = 0x007FFF00
+   "Register address[5]" = 0x00650e7c
+   "Bit field mask[5]" = 0x1FF
+   "Value[5]" = 0x000001FF
+   "Register address[6]" = 0x00650e74
+   "Bit field mask[6]" = 0x3F
+   "Value[6]" = 0x20104
+   "Register address[7]" = 0x00650e78
+   "Bit field mask[7]" = 0x3f3f3f00
+   "Value[7]" = 0xC0A0B00
+   "Register address[8]" = 0x00650e80
+   "Bit field mask[8]" = 0x3F3F3F3F
+   "Value[8]" = 0x00030404
+   "Register address[9]" = 0x00650e84
+   "Bit field mask[9]" = 0x3F3F3F01
+   "Value[9]" = 0x00040000
+   "Register address[10]" = 0x00640600
+   "Bit field mask[10]" = 0xFFFFFFFF
+   "Value[10]" = 0x0000000C
+   "Register address[11]" = 0x00640608
+   "Bit field mask[11]" = 0xFFFFFFFF
+   "Value[11]" = 0x0000021E
+   "Register address[12]" = 0x0064060c
+   "Bit field mask[12]" = 0xFFFFFFFF
+   "Value[12]" = 0x00000CB8
+   "Register address[13]" = 0x0064061c
+   "Bit field mask[13]" = 0xFFFFFFFF
+   "Value[13]" = 0x000009F8
+}
+ENTRY "PMU register w/r"
+{
+   "Record Subtype" = 1
+   "Num entries" = 10
+   "Register address[0]" = 0x00640838
+   "Bit field mask[0]" = 0x00000003
+   "Value[0]" = 0x00000002
+   "Register address[1]" = 0x00654010
+   "Bit field mask[1]" = 0xFFFAAFFF
+   "Value[1]" = 0xfe3ea3dd
+   "Register address[2]" = 0x00654018
+   "Bit field mask[2]" = 0xFF7E00FE
+   "Value[2]" = 0x002381000
+   "Register address[3]" = 0x00654024
+   "Bit field mask[3]" = 0x600FF
+   "Value[3]" = 0x0004464A
+   "Register address[4]" = 0x0065402c
+   "Bit field mask[4]" = 0xFFC0C0E7
+   "Value[4]" = 0x00FFFF80
+   "Register address[5]" = 0x00640600
+   "Bit field mask[5]" = 0xFFFFFFFF
+   "Value[5]" = 0x00000000
+   "Register address[6]" = 0x00640608
+   "Bit field mask[6]" = 0xFFFFFFFF
+   "Value[6]" = 0x0000121E
+   "Register address[7]" = 0x0064060c
+   "Bit field mask[7]" = 0xFFFFFFFF
+   "Value[7]" = 0x00000838
+   "Register address[8]" = 0x0064061c
+   "Bit field mask[8]" = 0xFFFFFFFF
+   "Value[8]" = 0x000004F8
+   "Register address[9]" = 0x00640620
+   "Bit field mask[9]" = 0xFFFFFFFF
+   "Value[9]" = 0x0000013F
+}
+ENTRY "PMU register w/r"
+{
+   "Record Subtype" = 2
+   "Num entries" = 10
+   "Register address[0]" = 0x00640838
+   "Bit field mask[0]" = 0x00000003
+   "Value[0]" = 0x00000003
+   "Register address[1]" = 0x00654010
+   "Bit field mask[1]" = 0xFFFAAFFF
+   "Value[1]" = 0xfe3ea3d9
+   "Register address[2]" = 0x00654018
+   "Bit field mask[2]" = 0xFF7E00FE
+   "Value[2]" = 0x00281000
+   "Register address[3]" = 0x00654024
+   "Bit field mask[3]" = 0x600FF
+   "Value[3]" = 0x0004464A
+   "Register address[4]" = 0x0065402c
+   "Bit field mask[4]" = 0xFFC0C0E7
+   "Value[4]" = 0x007FFF00
+   "Register address[5]" = 0x00640600
+   "Bit field mask[5]" = 0xFFFFFFFF
+   "Value[5]" = 0x0000000C
+   "Register address[6]" = 0x00640608
+   "Bit field mask[6]" = 0xFFFFFFFF
+   "Value[6]" = 0x0000021E
+   "Register address[7]" = 0x0064060c
+   "Bit field mask[7]" = 0xFFFFFFFF
+   "Value[7]" = 0x00000CB8
+   "Register address[8]" = 0x0064061c
+   "Bit field mask[8]" = 0xFFFFFFFF
+   "Value[8]" = 0x000009F8
+   "Register address[9]" = 0x00640620
+   "Bit field mask[9]" = 0xFFFFFFFF
+   "Value[9]" = 0x00001FFF
+}
+ENTRY "PMU register w/r"
+{
+   "Record Subtype" = 3
+   "Num entries" = 33
+   "Register address[0]" = 0x00640838
+   "Bit field mask[0]" = 0x00000003
+   "Value[0]" = 0x00000003
+   "Register address[1]" = 0x00640850
+   "Bit field mask[1]" = 0x0000FFFF
+   "Value[1]" = 0x0000E001
+   "Register address[2]" = 0x00654000
+   "Bit field mask[2]" = 0x0
+   "Value[2]" = 0x00F0F0F0
+   "Register address[3]" = 0x00654004
+   "Bit field mask[3]" = 0x0
+   "Value[3]" = 0x00F0F0F0
+   "Register address[4]" = 0x00654008
+   "Bit field mask[4]" = 0x0
+   "Value[4]" = 0x000000FF
+   "Register address[5]" = 0x0065400c
+   "Bit field mask[5]" = 0x0
+   "Value[5]" = 0x00009090
+   "Register address[6]" = 0x00654010
+   "Bit field mask[6]" = 0xFFFAAFFF
+   "Value[6]" = 0xfe3e03dd
+   "Register address[7]" = 0x00654014
+   "Bit field mask[7]" = 0x0
+   "Value[7]" = 0x00000000
+   "Register address[8]" = 0x00654018
+   "Bit field mask[8]" = 0xFF7E00FE
+   "Value[8]" = 0x00238103e
+   "Register address[9]" = 0x0065401c
+   "Bit field mask[9]" = 0x0
+   "Value[9]" = 0x000000F0
+   "Register address[10]" = 0x00654020
+   "Bit field mask[10]" = 0x0
+   "Value[10]" = 0x00000000
+   "Register address[11]" = 0x00654024
+   "Bit field mask[11]" = 0x600FF
+   "Value[11]" = 0x00044630
+   "Register address[12]" = 0x00654028
+   "Bit field mask[12]" = 0x0
+   "Value[12]" = 0x00000000
+   "Register address[13]" = 0x0065402c
+   "Bit field mask[13]" = 0xFFC0C0E7
+   "Value[13]" = 0x0003FF00
+   "Register address[14]" = 0x00654030
+   "Bit field mask[14]" = 0x0000C001
+   "Value[14]" = 0x00000AB0
+   "Register address[15]" = 0x0065404c
+   "Bit field mask[15]" = 0x00000001
+   "Value[15]" = 0x00000000
+   "Register address[16]" = 0x00650c04
+   "Bit field mask[16]" = 0x000000A8
+   "Value[16]" = 0x00000000
+   "Register address[17]" = 0x00650e7c
+   "Bit field mask[17]" = 0x1FF
+   "Value[17]" = 0x000001FF
+   "Register address[18]" = 0x00650e74
+   "Bit field mask[18]" = 0x3F
+   "Value[18]" = 0x20104
+   "Register address[19]" = 0x00650e78
+   "Bit field mask[19]" = 0x3f3f3f00
+   "Value[19]" = 0xC0A0B00
+   "Register address[20]" = 0x00650e80
+   "Bit field mask[20]" = 0x3F3F3F3F
+   "Value[20]" = 0x00030404
+   "Register address[21]" = 0x00650e84
+   "Bit field mask[21]" = 0x3F3F3F01
+   "Value[21]" = 0x00040000
+   "Register address[22]" = 0x00640600
+   "Bit field mask[22]" = 0xFFFFFFFF
+   "Value[22]" = 0x0000000C
+   "Register address[23]" = 0x00640604
+   "Bit field mask[23]" = 0xFFFFFFFF
+   "Value[23]" = 0x00000081
+   "Register address[24]" = 0x00640608
+   "Bit field mask[24]" = 0xFFFFFFFF
+   "Value[24]" = 0x0000021E
+   "Register address[25]" = 0x0064060c
+   "Bit field mask[25]" = 0xFFFFFFFF
+   "Value[25]" = 0x00000CB8
+   "Register address[26]" = 0x00640610
+   "Bit field mask[26]" = 0xFFFFFFFF
+   "Value[26]" = 0x00007FBC
+   "Register address[27]" = 0x00640614
+   "Bit field mask[27]" = 0xFFFFFFFF
+   "Value[27]" = 0x00007BDE
+   "Register address[28]" = 0x00640618
+   "Bit field mask[28]" = 0xFFFFFFFF
+   "Value[28]" = 0x00003CFE
+   "Register address[29]" = 0x0064061c
+   "Bit field mask[29]" = 0xFFFFFFFF
+   "Value[29]" = 0x000009F8
+   "Register address[30]" = 0x00640620
+   "Bit field mask[30]" = 0xFFFFFFFF
+   "Value[30]" = 0x00001FFF
+   "Register address[31]" = 0x00640624
+   "Bit field mask[31]" = 0xFFFFFFFF
+   "Value[31]" = 0x00000FFF
+   "Register address[32]" = 0x00640628
+   "Bit field mask[32]" = 0xFFFFFFFF
+   "Value[32]" = 0x00000000
+}
+ENTRY "Coexistence Config"
+{
+    "Type"                            = "3 pin 2 pin solution"
+    "T1 time 3 wire"                  = 120
+    "T2 time 3 wire"                  = 20
+    "T3 time 3 wire"                  = 127
+    "T5 time 3 wire"                  = 90
+    "T7 time 3 wire"                  = 0
+    "T9 time 3 wire"                  = 20
+    "T1 time 3 wire for BLE"          = 2
+    "T2 time 3 wire for BLE"          = 20
+    "T5 time 3 wire for BLE"          = 30
+    "T7 time 3 wire for BLE"          = 0
+    "4TH_WIRE"                        = 2
+    "5TH_WIRE"                        = 3
+    "GPIO_5WIRE_TYPE"                 = 0
+    "SCOThreshold"                    = 30
+    "A2DP Priority inverse threshold" = 10
+    "ACL Priority inverse threshold"  = 10
+    "Priorities"                      = 0xCF051933
+    "Configuration flags 1"           = 0x920A8000
+    "Configuration flags 2"           = 0x00000000
+    "ECSI Config"                     = 0xA2000017
+    "ECSI Config 1"                   = 0
+    "ECSI Config 2"                   = 0
+}
+ENTRY "TCA Table"
+{
+   "FAB ID"                 =   0x0
+    "Num TSteps"                =   6
+    "Tmin[0]"                   =   10
+    "Tmin[1]"                   =   35
+    "Tmin[2]"                   =   60
+    "Tmin[3]"                   =   90
+    "Tmin[4]"                   =   110
+    "Tmin[5]"                   =   125
+    "Num TssiTargets"   =   5
+    "TssiTarget[0][0]"          =   869
+    "TssiTarget[0][1]"          =   902
+    "TssiTarget[0][2]"          =   930
+    "TssiTarget[0][3]"          =   950
+    "TssiTarget[0][4]"          =   945
+    "TssiTarget[1][0]"          =   964
+    "TssiTarget[1][1]"          =   1001
+    "TssiTarget[1][2]"          =   1026
+    "TssiTarget[1][3]"          =   1076
+    "TssiTarget[1][4]"          =   1040
+    "TssiTarget[2][0]"          =   1000
+    "TssiTarget[2][1]"          =   1010
+    "TssiTarget[2][2]"          =   1045
+    "TssiTarget[2][3]"          =   1095
+    "TssiTarget[2][4]"          =   1050
+    "TssiTarget[3][0]"          =   1090
+    "TssiTarget[3][1]"          =   1118
+    "TssiTarget[3][2]"          =   1136
+    "TssiTarget[3][3]"          =   1148
+    "TssiTarget[3][4]"          =   1141
+    "TssiTarget[4][0]"          =   1189
+    "TssiTarget[4][1]"          =   1226
+    "TssiTarget[4][2]"          =   1237
+    "TssiTarget[4][3]"          =   1283
+    "TssiTarget[4][4]"          =   1284
+    "TssiTarget[5][0]"          =   1252
+    "TssiTarget[5][1]"          =   1278
+    "TssiTarget[5][2]"          =   1251
+    "TssiTarget[5][3]"          =   1341
+    "TssiTarget[5][4]"          =   1303
+    "TssiRangeLow[0]"           =   0x14
+    "TssiRangeHigh[0]"          =   0xFF
+    "TssiRangeLow[1]"           =   0x14
+    "TssiRangeHigh[1]"          =   0xFF
+    "TssiRangeLow[2]"           =   0x14
+    "TssiRangeHigh[2]"          =   0xFF
+    "TssiRangeLow[3]"           =   0x14
+    "TssiRangeHigh[3]"          =   0xFF
+    "TssiRangeLow[4]"           =   0x14
+    "TssiRangeHigh[4]"          =   0xFF
+    "TssiRangeLow[5]"           =   0x14
+    "TssiRangeHigh[5]"          =   0xFF
+    "TssiTargetEDR[0][0]"       =   1124
+    "TssiTargetEDR[0][1]"       =   1041
+    "TssiTargetEDR[0][2]"       =   1431
+    "TssiTargetEDR[0][3]"       =   1222
+    "TssiTargetEDR[0][4]"       =   1225
+    "TssiTargetEDR[1][0]"       =   1295
+    "TssiTargetEDR[1][1]"       =   1289
+    "TssiTargetEDR[1][2]"       =   1362
+    "TssiTargetEDR[1][3]"       =   1344
+    "TssiTargetEDR[1][4]"       =   1371
+    "TssiTargetEDR[2][0]"       =   1345
+    "TssiTargetEDR[2][1]"       =   1335
+    "TssiTargetEDR[2][2]"       =   1410
+    "TssiTargetEDR[2][3]"       =   1450
+    "TssiTargetEDR[2][4]"       =   1430
+    "TssiTargetEDR[3][0]"       =   1455
+    "TssiTargetEDR[3][1]"       =   1462
+    "TssiTargetEDR[3][2]"       =   1516
+    "TssiTargetEDR[3][3]"       =   1514
+    "TssiTargetEDR[3][4]"       =   1565
+    "TssiTargetEDR[4][0]"       =   1465
+    "TssiTargetEDR[4][1]"       =   1472
+    "TssiTargetEDR[4][2]"       =   1516
+    "TssiTargetEDR[4][3]"       =   1540
+    "TssiTargetEDR[4][4]"       =   1576
+    "TssiTargetEDR[5][0]"       =   1470
+    "TssiTargetEDR[5][1]"       =   1467
+    "TssiTargetEDR[5][2]"       =   1531
+    "TssiTargetEDR[5][3]"       =   1546
+    "TssiTargetEDR[5][4]"       =   1581
+    "TssiRangeLowEDR[0]"        =   0x14
+    "TssiRangeHighEDR[0]"       =   0xFF
+    "TssiRangeLowEDR[1]"        =   0x14
+    "TssiRangeHighEDR[1]"       =   0xFF
+    "TssiRangeLowEDR[2]"        =   0x14
+    "TssiRangeHighEDR[2]"       =   0xFF
+    "TssiRangeLowEDR[3]"        =   0x14
+    "TssiRangeHighEDR[3]"       =   0xFF
+    "TssiRangeLowEDR[4]"        =   0x14
+    "TssiRangeHighEDR[4]"       =   0xFF
+    "TssiRangeLowEDR[5]"        =   0x14
+    "TssiRangeHighEDR[5]"       =   0xFF
+    "Num Pages8"        =   7
+    "Num Pages16"       =   1
+          "BaseAddress8[0]"     =   0x600000
+              "NumRegs8[0]"     =   5
+          "AdrOffset8[0][0]"    =   0x029c
+            "Bitmask8[0][0]"    =   0xFF
+          "AdrOffset8[0][1]"    =   0x02a0
+            "Bitmask8[0][1]"    =   0xFF
+          "AdrOffset8[0][2]"    =   0x02a4
+            "Bitmask8[0][2]"    =   0xFF
+          "AdrOffset8[0][3]"    =   0x02a8
+            "Bitmask8[0][3]"    =   0xFF
+          "AdrOffset8[0][4]"    =   0x02ac
+            "Bitmask8[0][4]"    =   0xFF
+          "BaseAddress8[1]"     =   0x600000
+              "NumRegs8[1]"     =   5
+          "AdrOffset8[1][0]"    =   0x02c8
+            "Bitmask8[1][0]"    =   0xFF
+          "AdrOffset8[1][1]"    =   0x02cc
+            "Bitmask8[1][1]"    =   0xFF
+          "AdrOffset8[1][2]"    =   0x02d0
+            "Bitmask8[1][2]"    =   0xFF
+          "AdrOffset8[1][3]"    =   0x02d4
+            "Bitmask8[1][3]"    =   0xFF
+          "AdrOffset8[1][4]"    =   0x02d8
+            "Bitmask8[1][4]"    =   0xFF
+          "BaseAddress8[2]"        =    0x00600000
+              "NumRegs8[2]"        =    5
+          "AdrOffset8[2][0]"       =    0x04bc
+            "Bitmask8[2][0]"       =    0xFF
+          "AdrOffset8[2][1]"       =    0x04c0
+            "Bitmask8[2][1]"       =    0xFF
+          "AdrOffset8[2][2]"       =    0x04c4
+            "Bitmask8[2][2]"       =    0xFF
+          "AdrOffset8[2][3]"       =    0x04c8
+            "Bitmask8[2][3]"       =    0xFF
+          "AdrOffset8[2][4]"       =    0x04cc
+            "Bitmask8[2][4]"       =    0xFF
+          "BaseAddress8[3]"        =    0x00600000
+              "NumRegs8[3]"        =    5
+          "AdrOffset8[3][0]"       =    0x0b84
+            "Bitmask8[3][0]"       =    0xFF
+          "AdrOffset8[3][1]"       =    0x0878
+            "Bitmask8[3][1]"       =    0xFF
+          "AdrOffset8[3][2]"       =    0x0b48
+            "Bitmask8[3][2]"       =    0xFF
+          "AdrOffset8[3][3]"       =    0x04f8
+            "Bitmask8[3][3]"       =    0xFF
+          "AdrOffset8[3][4]"       =    0x04fc
+            "Bitmask8[3][4]"       =    0xFF
+          "BaseAddress8[4]"        =    0x00600000
+              "NumRegs8[4]"        =    5
+          "AdrOffset8[4][0]"      =    0x0500
+            "Bitmask8[4][0]"      =    0xFF
+          "AdrOffset8[4][1]"      =    0x0504
+            "Bitmask8[4][1]"      =    0xFF
+          "AdrOffset8[4][2]"      =    0x0508
+            "Bitmask8[4][2]"      =    0xFF
+          "AdrOffset8[4][3]"      =    0x050c
+            "Bitmask8[4][3]"      =    0xFF
+          "AdrOffset8[4][4]"      =    0x0510
+            "Bitmask8[4][4]"      =    0xFF
+          "BaseAddress8[5]"        =    0x00600000
+              "NumRegs8[5]"        =    5
+          "AdrOffset8[5][0]"      =    0x0514
+            "Bitmask8[5][0]"      =    0xFF
+          "AdrOffset8[5][1]"      =    0x0518
+            "Bitmask8[5][1]"      =    0xFF
+          "AdrOffset8[5][2]"      =    0x051c
+            "Bitmask8[5][2]"      =    0xFF
+          "AdrOffset8[5][3]"      =    0x09e0
+            "Bitmask8[5][3]"      =    0xFF
+          "AdrOffset8[5][4]"      =    0x0A80
+            "Bitmask8[5][4]"      =    0xFF
+          "BaseAddress8[6]"        =    0x00600000
+              "NumRegs8[6]"        =    5
+          "AdrOffset8[6][0]"      =    0x04e4
+            "Bitmask8[6][0]"      =    0xFF
+          "AdrOffset8[6][1]"      =    0x04e8
+            "Bitmask8[6][1]"      =    0xFF
+          "AdrOffset8[6][2]"      =    0x04ec
+            "Bitmask8[6][2]"      =    0xFF
+          "AdrOffset8[6][3]"      =    0x04f0
+            "Bitmask8[6][3]"      =    0xFF
+          "AdrOffset8[6][4]"      =    0x04f4
+            "Bitmask8[6][4]"      =    0xFF
+                "Data8[0][0][0]"         =   0x4E
+                "Data8[0][0][1]"         =   0x4C
+                "Data8[0][0][2]"         =   0x4E
+                "Data8[0][0][3]"         =   0x55
+                "Data8[0][0][4]"         =   0x56
+                "Data8[0][1][0]"         =   0x4C
+                "Data8[0][1][1]"         =   0x4A
+                "Data8[0][1][2]"         =   0x4B
+                "Data8[0][1][3]"         =   0x50
+                "Data8[0][1][4]"         =   0x53
+                "Data8[0][2][0]"         =    0x7C
+                "Data8[0][2][1]"         =    0x7C
+                "Data8[0][2][2]"         =    0x7C
+                "Data8[0][2][3]"         =    0x7C
+                "Data8[0][2][4]"         =    0x7C
+                "Data8[0][3][0]"         =    0x00
+                "Data8[0][3][1]"         =    0x0a
+                "Data8[0][3][2]"         =    0x22
+                "Data8[0][3][3]"         =    0x65
+                "Data8[0][3][4]"         =    0x65
+                "Data8[0][4][0]"         =    0x65
+                "Data8[0][4][1]"         =    0x65
+                "Data8[0][4][2]"         =    0x65
+                "Data8[0][4][3]"         =    0x69
+                "Data8[0][4][4]"         =    0x69
+                "Data8[0][5][0]"         =    0x69
+                "Data8[0][5][1]"         =    0x69
+                "Data8[0][5][2]"         =    0x69
+                "Data8[0][5][3]"         =    0xa5
+                "Data8[0][5][4]"         =    0x44
+                "Data8[0][6][0]"         =    0x59
+                "Data8[0][6][1]"         =    0x59
+                "Data8[0][6][2]"         =    0x59
+                "Data8[0][6][3]"         =    0x59
+                "Data8[0][6][4]"         =    0x59
+                "Data8[1][0][0]"         =   0x60
+                "Data8[1][0][1]"         =   0x5C
+                "Data8[1][0][2]"         =   0x5F
+                "Data8[1][0][3]"         =   0x67
+                "Data8[1][0][4]"         =   0x69
+                "Data8[1][1][0]"         =   0x5F
+                "Data8[1][1][1]"         =   0x5C
+                "Data8[1][1][2]"         =   0x5D
+                "Data8[1][1][3]"         =   0x63
+                "Data8[1][1][4]"         =   0x67
+                "Data8[1][2][0]"         =    0x7C
+                "Data8[1][2][1]"         =    0x7C
+                "Data8[1][2][2]"         =    0x7C
+                "Data8[1][2][3]"         =    0x7C
+                "Data8[1][2][4]"         =    0x7C
+                "Data8[1][3][0]"         =    0x00
+                "Data8[1][3][1]"         =    0x09
+                "Data8[1][3][2]"         =    0x22
+                "Data8[1][3][3]"         =    0x65
+                "Data8[1][3][4]"         =    0x65
+                "Data8[1][4][0]"         =    0x65
+                "Data8[1][4][1]"         =    0x65
+                "Data8[1][4][2]"         =    0x65
+                "Data8[1][4][3]"         =    0x57
+                "Data8[1][4][4]"         =    0x57
+                "Data8[1][5][0]"         =    0x57
+                "Data8[1][5][1]"         =    0x57
+                "Data8[1][5][2]"         =    0x57
+                "Data8[1][5][3]"         =    0xa5
+                "Data8[1][5][4]"         =    0x44
+                "Data8[1][6][0]"         =    0x5a
+                "Data8[1][6][1]"         =    0x5a
+                "Data8[1][6][2]"         =    0x5a
+                "Data8[1][6][3]"         =    0x5a
+                "Data8[1][6][4]"         =    0x5a
+                "Data8[2][0][0]"         =   0x76
+                "Data8[2][0][1]"         =   0x72
+                "Data8[2][0][2]"         =   0x75
+                "Data8[2][0][3]"         =   0x7F
+                "Data8[2][0][4]"         =   0x81
+                "Data8[2][1][0]"         =   0x73
+                "Data8[2][1][1]"         =   0x70
+                "Data8[2][1][2]"         =   0x71
+                "Data8[2][1][3]"         =   0x78
+                "Data8[2][1][4]"         =   0x7D
+                "Data8[2][2][0]"         =    0x7C
+                "Data8[2][2][1]"         =    0x7C
+                "Data8[2][2][2]"         =    0x7C
+                "Data8[2][2][3]"         =    0x7C
+                "Data8[2][2][4]"         =    0x7C
+                "Data8[2][3][0]"         =    0x00
+                "Data8[2][3][1]"         =    0x08
+                "Data8[2][3][2]"         =    0x22
+                "Data8[2][3][3]"         =    0x65
+                "Data8[2][3][4]"         =    0x65
+                "Data8[2][4][0]"         =    0x65
+                "Data8[2][4][1]"         =    0x65
+                "Data8[2][4][2]"         =    0x65
+                "Data8[2][4][3]"         =    0x57
+                "Data8[2][4][4]"         =    0x57
+                "Data8[2][5][0]"         =    0x57
+                "Data8[2][5][1]"         =    0x57
+                "Data8[2][5][2]"         =    0x57
+                "Data8[2][5][3]"         =    0xa5
+                "Data8[2][5][4]"         =    0x44
+                "Data8[2][6][0]"         =    0x5a
+                "Data8[2][6][1]"         =    0x5a
+                "Data8[2][6][2]"         =    0x5a
+                "Data8[2][6][3]"         =    0x5a
+                "Data8[2][6][4]"         =    0x5a
+                "Data8[3][0][0]"         =   0x8F
+                "Data8[3][0][1]"         =   0x8A
+                "Data8[3][0][2]"         =   0x8E
+                "Data8[3][0][3]"         =   0x9A
+                "Data8[3][0][4]"         =   0x9C
+                "Data8[3][1][0]"         =   0x8E
+                "Data8[3][1][1]"         =   0x8B
+                "Data8[3][1][2]"         =   0x8C
+                "Data8[3][1][3]"         =   0x95
+                "Data8[3][1][4]"         =   0x9B
+                "Data8[3][2][0]"         =    0x7C
+                "Data8[3][2][1]"         =    0x7C
+                "Data8[3][2][2]"         =    0x7C
+                "Data8[3][2][3]"         =    0x7C
+                "Data8[3][2][4]"         =    0x7C
+                "Data8[3][3][0]"         =    0x00
+                "Data8[3][3][1]"         =    0x08
+                "Data8[3][3][2]"         =    0x22
+                "Data8[3][3][3]"         =    0x65
+                "Data8[3][3][4]"         =    0x65
+                "Data8[3][4][0]"         =    0x65
+                "Data8[3][4][1]"         =    0x65
+                "Data8[3][4][2]"         =    0x65
+                "Data8[3][4][3]"         =    0x57
+                "Data8[3][4][4]"         =    0x57
+                "Data8[3][5][0]"         =    0x57
+                "Data8[3][5][1]"         =    0x57
+                "Data8[3][5][2]"         =    0x57
+                "Data8[3][5][3]"         =    0xa5
+                "Data8[3][5][4]"         =    0x44
+                "Data8[3][6][0]"         =    0x5a
+                "Data8[3][6][1]"         =    0x5a
+                "Data8[3][6][2]"         =    0x5a
+                "Data8[3][6][3]"         =    0x5a
+                "Data8[3][6][4]"         =    0x5a
+                "Data8[4][0][0]"         =   0xA5
+                "Data8[4][0][1]"         =   0x9F
+                "Data8[4][0][2]"         =   0xA3
+                "Data8[4][0][3]"         =   0xB1
+                "Data8[4][0][4]"         =   0xB4
+                "Data8[4][1][0]"         =   0xA3
+                "Data8[4][1][1]"         =   0x9F
+                "Data8[4][1][2]"         =   0xA0
+                "Data8[4][1][3]"         =   0xAA
+                "Data8[4][1][4]"         =   0xB1
+                "Data8[4][2][0]"         =    0x7C
+                "Data8[4][2][1]"         =    0x7C
+                "Data8[4][2][2]"         =    0x7C
+                "Data8[4][2][3]"         =    0x7C
+                "Data8[4][2][4]"         =    0x7C
+                "Data8[4][3][0]"         =    0x00
+                "Data8[4][3][1]"         =    0x07
+                "Data8[4][3][2]"         =    0x22
+                "Data8[4][3][3]"         =    0x65
+                "Data8[4][3][4]"         =    0x65
+                "Data8[4][4][0]"         =    0x65
+                "Data8[4][4][1]"         =    0x65
+                "Data8[4][4][2]"         =    0x65
+                "Data8[4][4][3]"         =    0x57
+                "Data8[4][4][4]"         =    0x57
+                "Data8[4][5][0]"         =    0x57
+                "Data8[4][5][1]"         =    0x57
+                "Data8[4][5][2]"         =    0x57
+                "Data8[4][5][3]"         =    0xa5
+                "Data8[4][5][4]"         =    0x44
+                "Data8[4][6][0]"         =    0x5a
+                "Data8[4][6][1]"         =    0x5a
+                "Data8[4][6][2]"         =    0x5a
+                "Data8[4][6][3]"         =    0x5a
+                "Data8[4][6][4]"         =    0x5a
+                "Data8[5][0][0]"         =   0xC1
+                "Data8[5][0][1]"         =   0xBA
+                "Data8[5][0][2]"         =   0xBF
+                "Data8[5][0][3]"         =   0xCF
+                "Data8[5][0][4]"         =   0xD2
+                "Data8[5][1][0]"         =   0xBD
+                "Data8[5][1][1]"         =   0xB8
+                "Data8[5][1][2]"         =   0xBA
+                "Data8[5][1][3]"         =   0xC5
+                "Data8[5][1][4]"         =   0xCD
+                "Data8[5][2][0]"         =    0x7C
+                "Data8[5][2][1]"         =    0x7C
+                "Data8[5][2][2]"         =    0x7C
+                "Data8[5][2][3]"         =    0x7C
+                "Data8[5][2][4]"         =    0x7C
+                "Data8[5][3][0]"         =    0x07
+                "Data8[5][3][1]"         =    0x06
+                "Data8[5][3][2]"         =    0x52
+                "Data8[5][3][3]"         =    0x69
+                "Data8[5][3][4]"         =    0x69
+                "Data8[5][4][0]"         =    0x69
+                "Data8[5][4][1]"         =    0x69
+                "Data8[5][4][2]"         =    0x69
+                "Data8[5][4][3]"         =    0x69
+                "Data8[5][4][4]"         =    0x69
+                "Data8[5][5][0]"         =    0x69
+                "Data8[5][5][1]"         =    0x69
+                "Data8[5][5][2]"         =    0x69
+                "Data8[5][5][3]"         =    0xa5
+                "Data8[5][5][4]"         =    0x44
+                "Data8[5][6][0]"         =    0x5a
+                "Data8[5][6][1]"         =    0x5a
+                "Data8[5][6][2]"         =    0x5a
+                "Data8[5][6][3]"         =    0x5a
+                "Data8[5][6][4]"         =    0x5a
+        "BaseAddress16[0]"        =    0x410000
+            "NumRegs16[0]"        =    2
+        "AdrOffset16[0][0]"       =    0x0380
+          "Bitmask16[0][0]"       =    0xFFFF
+        "AdrOffset16[0][1]"       =    0x0488
+          "Bitmask16[0][1]"       =    0xFFFF
+        "Data16[0][0][0]"         =    0x13db
+        "Data16[0][0][1]"         =    0x400
+        "Data16[1][0][0]"         =    0x13de
+        "Data16[1][0][1]"         =    0x400
+        "Data16[2][0][0]"         =    0x13de
+        "Data16[2][0][1]"         =    0x400
+        "Data16[3][0][0]"         =    0x13de
+        "Data16[3][0][1]"         =    0x400
+        "Data16[4][0][0]"         =    0x13de
+        "Data16[4][0][1]"         =    0x400
+        "Data16[5][0][0]"         =    0x13de
+        "Data16[5][0][1]"         =    0x400
+}
+ENTRY "LE TCA Table"
+{
+   "FAB ID"                    =    0x02
+    "Num TSteps"                =    6
+    "Num TssiTargets"    =    5
+    "TssiTarget[0][0]"             =    965
+    "TssiTarget[0][1]"             =    960
+    "TssiTarget[0][2]"             =    970
+    "TssiTarget[0][3]"             =    985
+    "TssiTarget[0][4]"             =    990
+    "TssiTarget[1][0]"             =    1070
+    "TssiTarget[1][1]"             =    1065
+    "TssiTarget[1][2]"             =    1070
+    "TssiTarget[1][3]"             =    1115
+    "TssiTarget[1][4]"             =    1090
+    "TssiTarget[2][0]"             =    1110
+    "TssiTarget[2][1]"             =    1075
+    "TssiTarget[2][2]"             =    1090
+    "TssiTarget[2][3]"             =    1135
+    "TssiTarget[2][4]"             =    1100
+    "TssiTarget[3][0]"             =    1210
+    "TssiTarget[3][1]"             =    1190
+    "TssiTarget[3][2]"             =    1185
+    "TssiTarget[3][3]"             =    1190
+    "TssiTarget[3][4]"             =    1195
+    "TssiTarget[4][0]"             =    1320
+    "TssiTarget[4][1]"             =    1305
+    "TssiTarget[4][2]"             =    1290
+    "TssiTarget[4][3]"             =    1330
+    "TssiTarget[4][4]"             =    1345
+    "TssiTarget[5][0]"             =    1390
+    "TssiTarget[5][1]"             =    1360
+    "TssiTarget[5][2]"             =    1305
+    "TssiTarget[5][3]"             =    1390
+    "TssiTarget[5][4]"             =    1365
+    "TssiRangeLow[0]"           =    0x14
+    "TssiRangeHigh[0]"          =    0xFF
+    "TssiRangeLow[1]"           =    0x14
+    "TssiRangeHigh[1]"          =    0xFF
+    "TssiRangeLow[2]"           =    0x14
+    "TssiRangeHigh[2]"          =    0xFF
+    "TssiRangeLow[3]"           =    0x14
+    "TssiRangeHigh[3]"          =    0xFF
+    "TssiRangeLow[4]"           =    0x14
+    "TssiRangeHigh[4]"          =    0xFF
+    "TssiRangeLow[5]"           =    0x14
+    "TssiRangeHigh[5]"          =    0xFF
+    "Num Pages8"          =    1
+    "Num Pages16"         =    0
+          "BaseAddress8[0]"        =    0x600000
+              "NumRegs8[0]"        =    5
+          "AdrOffset8[0][0]"       =    0x029c
+            "Bitmask8[0][0]"       =    0xFF
+          "AdrOffset8[0][1]"       =    0x02a0
+            "Bitmask8[0][1]"       =    0xFF
+          "AdrOffset8[0][2]"       =    0x02a4
+            "Bitmask8[0][2]"       =    0xFF
+          "AdrOffset8[0][3]"       =    0x02a8
+            "Bitmask8[0][3]"       =    0xFF
+          "AdrOffset8[0][4]"       =    0x02ac
+            "Bitmask8[0][4]"       =    0xFF
+               "Data8[0][0][0]"          =    0x1e
+               "Data8[0][0][1]"          =    0x1e
+               "Data8[0][0][2]"          =    0x1f
+               "Data8[0][0][3]"          =    0x1f
+               "Data8[0][0][4]"          =    0x21
+               "Data8[1][0][0]"          =    0x31
+               "Data8[1][0][1]"          =    0x32
+               "Data8[1][0][2]"          =    0x33
+               "Data8[1][0][3]"          =    0x33
+               "Data8[1][0][4]"          =    0x38
+               "Data8[2][0][0]"          =    0x86
+               "Data8[2][0][1]"          =    0x86
+               "Data8[2][0][2]"          =    0x86
+               "Data8[2][0][3]"          =    0x86
+               "Data8[2][0][4]"          =    0x86
+               "Data8[3][0][0]"          =    0x64
+               "Data8[3][0][1]"          =    0x64
+               "Data8[3][0][2]"          =    0x63
+               "Data8[3][0][3]"          =    0x67
+               "Data8[3][0][4]"          =    0x71
+               "Data8[4][0][0]"          =    0x9a
+               "Data8[4][0][1]"          =    0x95
+               "Data8[4][0][2]"          =    0x97
+               "Data8[4][0][3]"          =    0xa1
+               "Data8[4][0][4]"          =    0xb5
+               "Data8[5][0][0]"          =    0xc8
+               "Data8[5][0][1]"          =    0xc5
+               "Data8[5][0][2]"          =    0xca
+               "Data8[5][0][3]"          =    0xdb
+               "Data8[5][0][4]"          =    0xda
+}
+ENTRY "LE TCA Table"
+{
+   "FAB ID"                	=	0x0
+    "Num TSteps"            	=	6
+    "Num TssiTargets"	=	5
+    "TssiTarget[0][0]"         	=	965
+    "TssiTarget[0][1]"         	=	960
+    "TssiTarget[0][2]"         	=	970
+    "TssiTarget[0][3]"         	=	985
+    "TssiTarget[0][4]"         	=	990
+    "TssiTarget[1][0]"         	=	1070
+    "TssiTarget[1][1]"         	=	1065
+    "TssiTarget[1][2]"         	=	1070
+    "TssiTarget[1][3]"         	=	1115
+    "TssiTarget[1][4]"         	=	1090
+    "TssiTarget[2][0]"         	=	1110
+    "TssiTarget[2][1]"         	=	1075
+    "TssiTarget[2][2]"         	=	1090
+    "TssiTarget[2][3]"         	=	1135
+    "TssiTarget[2][4]"         	=	1100
+    "TssiTarget[3][0]"         	=	1210
+    "TssiTarget[3][1]"         	=	1190
+    "TssiTarget[3][2]"         	=	1185
+    "TssiTarget[3][3]"         	=	1190
+    "TssiTarget[3][4]"         	=	1195
+    "TssiTarget[4][0]"         	=	1320
+    "TssiTarget[4][1]"         	=	1305
+    "TssiTarget[4][2]"         	=	1290
+    "TssiTarget[4][3]"         	=	1330
+    "TssiTarget[4][4]"         	=	1345
+    "TssiTarget[5][0]"         	=	1390
+    "TssiTarget[5][1]"         	=	1360
+    "TssiTarget[5][2]"         	=	1305
+    "TssiTarget[5][3]"         	=	1390
+    "TssiTarget[5][4]"         	=	1365
+    "TssiRangeLow[0]"       	=	0x14
+    "TssiRangeHigh[0]"      	=	0xFF
+    "TssiRangeLow[1]"       	=	0x14
+    "TssiRangeHigh[1]"      	=	0xFF
+    "TssiRangeLow[2]"       	=	0x14
+    "TssiRangeHigh[2]"      	=	0xFF
+    "TssiRangeLow[3]"       	=	0x14
+    "TssiRangeHigh[3]"      	=	0xFF
+    "TssiRangeLow[4]"       	=	0x14
+    "TssiRangeHigh[4]"      	=	0xFF
+    "TssiRangeLow[5]"       	=	0x14
+    "TssiRangeHigh[5]"      	=	0xFF
+    "Num Pages8"      	=	1
+    "Num Pages16"     	=	0
+          "BaseAddress8[0]"    	=	0x600000
+              "NumRegs8[0]"    	=	5
+          "AdrOffset8[0][0]"   	=	0x029c
+            "Bitmask8[0][0]"   	=	0xFF
+          "AdrOffset8[0][1]"   	=	0x02a0
+            "Bitmask8[0][1]"   	=	0xFF
+          "AdrOffset8[0][2]"   	=	0x02a4
+            "Bitmask8[0][2]"   	=	0xFF
+          "AdrOffset8[0][3]"   	=	0x02a8
+            "Bitmask8[0][3]"   	=	0xFF
+          "AdrOffset8[0][4]"   	=	0x02ac
+            "Bitmask8[0][4]"   	=	0xFF
+               "Data8[0][0][0]"      	=	0x4E
+               "Data8[0][0][1]"      	=	0x4C
+               "Data8[0][0][2]"      	=	0x4E
+               "Data8[0][0][3]"      	=	0x55
+               "Data8[0][0][4]"      	=	0x56
+               "Data8[1][0][0]"      	=	0x60
+               "Data8[1][0][1]"      	=	0x5C
+               "Data8[1][0][2]"      	=	0x5F
+               "Data8[1][0][3]"      	=	0x67
+               "Data8[1][0][4]"      	=	0x69
+               "Data8[2][0][0]"      	=	0x76
+               "Data8[2][0][1]"      	=	0x72
+               "Data8[2][0][2]"      	=	0x75
+               "Data8[2][0][3]"      	=	0x7F
+               "Data8[2][0][4]"      	=	0x81
+               "Data8[3][0][0]"      	=	0x8F
+               "Data8[3][0][1]"      	=	0x8A
+               "Data8[3][0][2]"      	=	0x8E
+               "Data8[3][0][3]"      	=	0x9A
+               "Data8[3][0][4]"      	=	0x9C
+               "Data8[4][0][0]"      	=	0xA5
+               "Data8[4][0][1]"      	=	0x9F
+               "Data8[4][0][2]"      	=	0xA3
+               "Data8[4][0][3]"      	=	0xB1
+               "Data8[4][0][4]"      	=	0xB4
+               "Data8[5][0][0]"      	=	0xC1
+               "Data8[5][0][1]"      	=	0xBA
+               "Data8[5][0][2]"      	=	0xBF
+               "Data8[5][0][3]"      	=	0xCF
+               "Data8[5][0][4]"      	=	0xD2
+}
+ENTRY "Temperature Correction Algorithm Config"
+{
+   "Enable" = 0x1F
+}
+ENTRY "Init BB Register Bit Fields"
+{
+    "Num entries" = 225
+    "Register address[0]" = 0x41000c
+    "Bit field mask[0]" = 0xFFFFFFFF
+    "Value[0]" = 0x4054
+    "Register address[1]" = 0x410018
+    "Bit field mask[1]" = 0xFFFFFFFF
+    "Value[1]" = 0x7e07
+    "Register address[2]" = 0x410088
+    "Bit field mask[2]" = 0xFFFFFFFF
+    "Value[2]" = 0x0000
+    "Register address[3]" = 0x4100c0
+    "Bit field mask[3]" = 0xFFFFFFFF
+    "Value[3]" = 0x0181
+    "Register address[4]" = 0x41013c
+    "Bit field mask[4]" = 0xFFFFFFFF
+    "Value[4]" = 0x052a
+    "Register address[5]" = 0x410144
+    "Bit field mask[5]" = 0xFFFFFFFF
+    "Value[5]" = 0x090c
+    "Register address[6]" = 0x410148
+    "Bit field mask[6]" = 0xFFFFFFFF
+       "Value[6]" = 0x032E
+    "Register address[7]" = 0x410160
+    "Bit field mask[7]" = 0xFFFFFFFF
+    "Value[7]" = 0x090a
+    "Register address[8]" = 0x410170
+    "Bit field mask[8]" = 0xFFFFFFFF
+    "Value[8]" = 0x17de
+    "Register address[9]" = 0x41017c
+    "Bit field mask[9]" = 0xFFFFFFFF
+    "Value[9]" = 0x052a
+    "Register address[10]" = 0x410380
+    "Bit field mask[10]" = 0xFFFFFFFF
+    "Value[10]" = 0x13de
+    "Register address[11]" = 0x410384
+    "Bit field mask[11]" = 0xFFFFFFFF
+    "Value[11]" = 0xced7
+    "Register address[12]" = 0x410388
+    "Bit field mask[12]" = 0xFFFFFFFF
+    "Value[12]" = 0x3ff9
+    "Register address[13]" = 0x41038c
+    "Bit field mask[13]" = 0xFFFFFFFF
+    "Value[13]" = 0xac85
+    "Register address[14]" = 0x410390
+    "Bit field mask[14]" = 0xFFFFFFFF
+    "Value[14]" = 0x1c5d
+    "Register address[15]" = 0x4103e8
+    "Bit field mask[15]" = 0xFFFFFFFF
+    "Value[15]" = 0x001c
+    "Register address[16]" = 0x410494
+    "Bit field mask[16]" = 0xFFFFFFFF
+    "Value[16]" = 0x026c
+    "Register address[17]" = 0x4104c0
+    "Bit field mask[17]" = 0xFFFFFFFF
+    "Value[17]" = 0x8000
+    "Register address[18]" = 0x41061c
+    "Bit field mask[18]" = 0xFFFFFFFF
+    "Value[18]" = 0x402f
+    "Register address[19]" = 0x410620
+    "Bit field mask[19]" = 0xFFFFFFFF
+    "Value[19]" = 0x4025
+    "Register address[20]" = 0x410624
+    "Bit field mask[20]" = 0xFFFFFFFF
+    "Value[20]" = 0x4014
+    "Register address[21]" = 0x410628
+    "Bit field mask[21]" = 0xFFFFFFFF
+    "Value[21]" = 0x43a3
+    "Register address[22]" = 0x41062c
+    "Bit field mask[22]" = 0xFFFFFFFF
+    "Value[22]" = 0x4052
+    "Register address[23]" = 0x410734
+    "Bit field mask[23]" = 0xFFFFFFFF
+    "Value[23]" = 0x6221
+    "Register address[24]" = 0x4107f0
+    "Bit field mask[24]" = 0xFFFFFFFF
+    "Value[24]" = 0x8031
+    "Register address[25]" = 0x4108a0
+    "Bit field mask[25]" = 0xFFFFFFFF
+    "Value[25]" = 0x0131
+    "Register address[26]" = 0x4108a8
+    "Bit field mask[26]" = 0xFFFFFFFF
+    "Value[26]" = 0x0350
+    "Register address[27]" = 0x4108a4
+    "Bit field mask[27]" = 0xFFFFFFFF
+    "Value[27]" = 0x153
+    "Register address[28]" = 0x4108a0
+    "Bit field mask[28]" = 0xFFFFFFFF
+    "Value[28]" = 0x137
+    "Register address[29]" = 0x41089c
+    "Bit field mask[29]" = 0xFFFFFFFF
+    "Value[29]" = 0x100
+    "Register address[30]" = 0x600008
+    "Bit field mask[30]" = 0xFFFFFFFF
+    "Value[30]" = 0x05
+    "Register address[31]" = 0x600034
+    "Bit field mask[31]" = 0xFFFFFFFF
+    "Value[31]" = 0x0f
+    "Register address[32]" = 0x600124
+    "Bit field mask[32]" = 0xFFFFFFFF
+    "Value[32]" = 0x0039
+    "Register address[33]" = 0x600128
+    "Bit field mask[33]" = 0xFFFFFFFF
+    "Value[33]" = 0x003f
+    "Register address[34]" = 0x60012c
+    "Bit field mask[34]" = 0xFFFFFFFF
+    "Value[34]" = 0x0056
+    "Register address[35]" = 0x600130
+    "Bit field mask[35]" = 0xFFFFFFFF
+    "Value[35]" = 0x0020
+    "Register address[36]" = 0x600150
+    "Bit field mask[36]" = 0xFFFFFFFF
+    "Value[36]" = 0x0001
+    "Register address[37]" = 0x600134
+    "Bit field mask[37]" = 0xFFFFFFFF
+    "Value[37]" = 0x0009
+    "Register address[38]" = 0x600158
+    "Bit field mask[38]" = 0xFFFFFFFF
+    "Value[38]" = 0x21
+    "Register address[39]" = 0x6001dc
+    "Bit field mask[39]" = 0xFFFFFFFF
+    "Value[39]" = 0x85
+    "Register address[40]" = 0x6001e0
+    "Bit field mask[40]" = 0xFFFFFFFF
+    "Value[40]" = 0x25
+    "Register address[41]" = 0x6001e4
+    "Bit field mask[41]" = 0xFFFFFFFF
+    "Value[41]" = 0x3e
+    "Register address[42]" = 0x6001e8
+    "Bit field mask[42]" = 0xFFFFFFFF
+    "Value[42]" = 0x26
+    "Register address[43]" = 0x6001ec
+    "Bit field mask[43]" = 0xFFFFFFFF
+    "Value[43]" = 0x64
+    "Register address[44]" = 0x6001f4
+    "Bit field mask[44]" = 0xFFFFFFFF
+    "Value[44]" = 0x9c
+    "Register address[45]" = 0x60029c
+    "Bit field mask[45]" = 0xFFFFFFFF
+    "Value[45]" = 0x50
+    "Register address[46]" = 0x6002a0
+    "Bit field mask[46]" = 0xFFFFFFFF
+    "Value[46]" = 0x50
+    "Register address[47]" = 0x6002a4
+    "Bit field mask[47]" = 0xFFFFFFFF
+    "Value[47]" = 0x50
+    "Register address[48]" = 0x6002a8
+    "Bit field mask[48]" = 0xFFFFFFFF
+    "Value[48]" = 0x50
+    "Register address[49]" = 0x6002ac
+    "Bit field mask[49]" = 0xFFFFFFFF
+    "Value[49]" = 0x50
+    "Register address[50]" = 0x6002c8
+    "Bit field mask[50]" = 0xFFFFFFFF
+    "Value[50]" = 0x50
+    "Register address[51]" = 0x6002cc
+    "Bit field mask[51]" = 0xFFFFFFFF
+    "Value[51]" = 0x50
+    "Register address[52]" = 0x6002d0
+    "Bit field mask[52]" = 0xFFFFFFFF
+    "Value[52]" = 0x50
+    "Register address[53]" = 0x6002d4
+    "Bit field mask[53]" = 0xFFFFFFFF
+    "Value[53]" = 0x50
+    "Register address[54]" = 0x6002d8
+    "Bit field mask[54]" = 0xFFFFFFFF
+    "Value[54]" = 0x50
+    "Register address[55]" = 0x600318
+    "Bit field mask[55]" = 0xFFFFFFFF
+    "Value[55]" = 0x50
+    "Register address[56]" = 0x60031c
+    "Bit field mask[56]" = 0xFFFFFFFF
+    "Value[56]" = 0x50
+    "Register address[57]" = 0x600320
+    "Bit field mask[57]" = 0xFFFFFFFF
+    "Value[57]" = 0x50
+    "Register address[58]" = 0x600324
+    "Bit field mask[58]" = 0xFFFFFFFF
+    "Value[58]" = 0x50
+    "Register address[59]" = 0x60034c
+    "Bit field mask[59]" = 0xFFFFFFFF
+    "Value[59]" = 0x61
+    "Register address[60]" = 0x600350
+    "Bit field mask[60]" = 0xFFFFFFFF
+    "Value[60]" = 0x61
+    "Register address[61]" = 0x600354
+    "Bit field mask[61]" = 0xFFFFFFFF
+    "Value[61]" = 0x61
+    "Register address[62]" = 0x600358
+    "Bit field mask[62]" = 0xFFFFFFFF
+    "Value[62]" = 0x61
+    "Register address[63]" = 0x60035c
+    "Bit field mask[63]" = 0xFFFFFFFF
+    "Value[63]" = 0x61
+    "Register address[64]" = 0x600274
+    "Bit field mask[64]" = 0xFFFFFFFF
+    "Value[64]" = 0x3f
+    "Register address[65]" = 0x600380
+    "Bit field mask[65]" = 0xFFFFFFFF
+    "Value[65]" = 0x04
+    "Register address[66]" = 0x60039c
+    "Bit field mask[66]" = 0xFFFFFFFF
+    "Value[66]" = 0x00
+    "Register address[67]" = 0x6003a0
+    "Bit field mask[67]" = 0xFFFFFFFF
+    "Value[67]" = 0x00
+    "Register address[68]" = 0x6003a4
+    "Bit field mask[68]" = 0xFFFFFFFF
+    "Value[68]" = 0x00
+    "Register address[69]" = 0x6003a8
+    "Bit field mask[69]" = 0xFFFFFFFF
+    "Value[69]" = 0x00
+    "Register address[70]" = 0x6003b0
+    "Bit field mask[70]" = 0xFFFFFFFF
+    "Value[70]" = 0x50
+    "Register address[71]" = 0x6003b4
+    "Bit field mask[71]" = 0xFFFFFFFF
+    "Value[71]" = 0x50
+    "Register address[72]" = 0x6003b8
+    "Bit field mask[72]" = 0xFFFFFFFF
+    "Value[72]" = 0x50
+    "Register address[73]" = 0x6003bc
+    "Bit field mask[73]" = 0xFFFFFFFF
+    "Value[73]" = 0x50
+    "Register address[74]" = 0x6003d8
+    "Bit field mask[74]" = 0xFFFFFFFF
+    "Value[74]" = 0x0088
+    "Register address[75]" = 0x6003f4
+    "Bit field mask[75]" = 0xFFFFFFFF
+    "Value[75]" = 0x0040
+    "Register address[76]" = 0x6004a8
+      "Bit field mask[76]" = 0xFFFFFFFF
+               "Value[76]" = 0x77
+    "Register address[77]" = 0x6004ac
+      "Bit field mask[77]" = 0xFFFFFFFF
+               "Value[77]" = 0x77
+    "Register address[78]" = 0x6004b0
+      "Bit field mask[78]" = 0xFFFFFFFF
+               "Value[78]" = 0x77
+    "Register address[79]" = 0x6004b4
+      "Bit field mask[79]" = 0xFFFFFFFF
+               "Value[79]" = 0x77
+    "Register address[80]" = 0x6004b8
+      "Bit field mask[80]" = 0xFFFFFFFF
+               "Value[80]" = 0x77
+    "Register address[81]" = 0x6004bc
+    "Bit field mask[81]" = 0xFFFFFFFF
+    "Value[81]" = 0x6f
+    "Register address[82]" = 0x6004c0
+    "Bit field mask[82]" = 0xFFFFFFFF
+    "Value[82]" = 0x6f
+    "Register address[83]" = 0x6004c4
+    "Bit field mask[83]" = 0xFFFFFFFF
+    "Value[83]" = 0x6f
+    "Register address[84]" = 0x6004c8
+    "Bit field mask[84]" = 0xFFFFFFFF
+    "Value[84]" = 0x6f
+    "Register address[85]" = 0x6004cc
+    "Bit field mask[85]" = 0xFFFFFFFF
+    "Value[85]" = 0x6f
+    "Register address[86]" = 0x6004d0
+    "Bit field mask[86]" = 0xFFFFFFFF
+    "Value[86]" = 0x57
+    "Register address[87]" = 0x6004d4
+    "Bit field mask[87]" = 0xFFFFFFFF
+    "Value[87]" = 0x57
+    "Register address[88]" = 0x6004d8
+    "Bit field mask[88]" = 0xFFFFFFFF
+    "Value[88]" = 0x57
+    "Register address[89]" = 0x6004dc
+    "Bit field mask[89]" = 0xFFFFFFFF
+    "Value[89]" = 0x57
+    "Register address[90]" = 0x6004e0
+    "Bit field mask[90]" = 0xFFFFFFFF
+    "Value[90]" = 0x57
+    "Register address[91]" = 0x6004e4
+    "Bit field mask[91]" = 0xFFFFFFFF
+    "Value[91]" = 0x57
+    "Register address[92]" = 0x6004e8
+    "Bit field mask[92]" = 0xFFFFFFFF
+    "Value[92]" = 0x57
+    "Register address[93]" = 0x6004ec
+    "Bit field mask[93]" = 0xFFFFFFFF
+    "Value[93]" = 0x57
+    "Register address[94]" = 0x6004f0
+    "Bit field mask[94]" = 0xFFFFFFFF
+    "Value[94]" = 0x57
+    "Register address[95]" = 0x6004f4
+    "Bit field mask[95]" = 0xFFFFFFFF
+    "Value[95]" = 0x57
+    "Register address[96]" = 0x6004f8
+    "Bit field mask[96]" = 0xFFFFFFFF
+    "Value[96]" = 0x65
+    "Register address[97]" = 0x6004fc
+    "Bit field mask[97]" = 0xFFFFFFFF
+    "Value[97]" = 0x65
+    "Register address[98]" = 0x600500
+    "Bit field mask[98]" = 0xFFFFFFFF
+    "Value[98]" = 0x65
+    "Register address[99]" = 0x600504
+    "Bit field mask[99]" = 0xFFFFFFFF
+    "Value[99]" = 0x65
+    "Register address[100]" = 0x600508
+    "Bit field mask[100]" = 0xFFFFFFFF
+    "Value[100]" = 0x65
+    "Register address[101]" = 0x60050c
+    "Bit field mask[101]" = 0xFFFFFFFF
+    "Value[101]" = 0x65
+    "Register address[102]" = 0x600510
+    "Bit field mask[102]" = 0xFFFFFFFF
+    "Value[102]" = 0x65
+    "Register address[103]" = 0x600514
+    "Bit field mask[103]" = 0xFFFFFFFF
+    "Value[103]" = 0x65
+    "Register address[104]" = 0x600518
+    "Bit field mask[104]" = 0xFFFFFFFF
+    "Value[104]" = 0x65
+    "Register address[105]" = 0x60051c
+    "Bit field mask[105]" = 0xFFFFFFFF
+    "Value[105]" = 0x65
+    "Register address[106]" = 0x600538
+    "Bit field mask[106]" = 0xFFFFFFFF
+    "Value[106]" = 0x0e
+    "Register address[107]" = 0x600570
+    "Bit field mask[107]" = 0xFFFFFFFF
+    "Value[107]" = 0x1f
+    "Register address[108]" = 0x6005a0
+    "Bit field mask[108]" = 0xFFFFFFFF
+    "Value[108]" = 0x26
+    "Register address[109]" = 0x6005a8
+    "Bit field mask[109]" = 0xFFFFFFFF
+    "Value[109]" = 0x96
+    "Register address[110]" = 0x600604
+    "Bit field mask[110]" = 0xFFFFFFFF
+    "Value[110]" = 0x1f
+    "Register address[111]" = 0x600634
+    "Bit field mask[111]" = 0xFFFFFFFF
+    "Value[111]" = 0x26
+    "Register address[112]" = 0x60063c
+    "Bit field mask[112]" = 0xFFFFFFFF
+    "Value[112]" = 0x96
+    "Register address[113]" = 0x6006a8
+    "Bit field mask[113]" = 0xFFFFFFFF
+    "Value[113]" = 0x7d
+    "Register address[114]" = 0x6006ac
+    "Bit field mask[114]" = 0xFFFFFFFF
+    "Value[114]" = 0x7f
+    "Register address[115]" = 0x6006b0
+    "Bit field mask[115]" = 0xFFFFFFFF
+    "Value[115]" = 0x84
+    "Register address[116]" = 0x6006b4
+    "Bit field mask[116]" = 0xFFFFFFFF
+    "Value[116]" = 0x8e
+    "Register address[117]" = 0x6006b8
+    "Bit field mask[117]" = 0xFFFFFFFF
+    "Value[117]" = 0x98
+    "Register address[118]" = 0x6006bc
+    "Bit field mask[118]" = 0xFFFFFFFF
+    "Value[118]" = 0x9e
+    "Register address[119]" = 0x6006c0
+    "Bit field mask[119]" = 0xFFFFFFFF
+    "Value[119]" = 0xa8
+    "Register address[120]" = 0x6006c4
+    "Bit field mask[120]" = 0xFFFFFFFF
+    "Value[120]" = 0xb4
+    "Register address[121]" =0x6006c8
+    "Bit field mask[121]" = 0xFFFFFFFF
+    "Value[121]" = 0xc7
+    "Register address[122]" = 0x6006cc
+    "Bit field mask[122]" = 0xFFFFFFFF
+    "Value[122]" = 0x40
+    "Register address[123]" = 0x6006d0
+    "Bit field mask[123]" = 0xFFFFFFFF
+    "Value[123]" = 0x43
+    "Register address[124]" = 0x6006d4
+    "Bit field mask[124]" = 0xFFFFFFFF
+    "Value[124]" = 0x47
+    "Register address[125]" = 0x6006d8
+    "Bit field mask[125]" = 0xFFFFFFFF
+    "Value[125]" = 0x4a
+    "Register address[126]" = 0x6006dc
+    "Bit field mask[126]" = 0xFFFFFFFF
+    "Value[126]" = 0x50
+    "Register address[127]" = 0x6006e0
+    "Bit field mask[127]" = 0xFFFFFFFF
+    "Value[127]" = 0x55
+    "Register address[128]" = 0x6006e4
+    "Bit field mask[128]" = 0xFFFFFFFF
+    "Value[128]" = 0x59
+    "Register address[129]" = 0x6006e8
+    "Bit field mask[129]" = 0xFFFFFFFF
+    "Value[129]" = 0x5f
+    "Register address[130]" = 0x6006ec
+    "Bit field mask[130]" = 0xFFFFFFFF
+    "Value[130]" = 0x66
+    "Register address[131]" = 0x6007a0
+    "Bit field mask[131]" = 0xFFFFFFFF
+    "Value[131]" = 0x0019
+    "Register address[132]" = 0x600798
+    "Bit field mask[132]" = 0xFFFFFFFF
+    "Value[132]" = 0x0018
+    "Register address[133]" = 0x600748
+    "Bit field mask[133]" = 0xFFFFFFFF
+    "Value[133]" = 0x3f
+    "Register address[134]" = 0x60077c
+    "Bit field mask[134]" = 0xFFFFFFFF
+    "Value[134]" = 0x2a
+    "Register address[135]" = 0x6007b8
+    "Bit field mask[135]" = 0xFFFFFFFF
+    "Value[135]" = 0x50
+    "Register address[136]" = 0x6007c0
+    "Bit field mask[136]" = 0xFFFFFFFF
+    "Value[136]" = 0x50
+    "Register address[137]" = 0x6007c8
+    "Bit field mask[137]" = 0xFFFFFFFF
+    "Value[137]" = 0x50
+    "Register address[138]" = 0x6007d0
+    "Bit field mask[138]" = 0xFFFFFFFF
+    "Value[138]" = 0x50
+    "Register address[139]" = 0x6007d8
+    "Bit field mask[139]" = 0xFFFFFFFF
+    "Value[139]" = 0x50
+    "Register address[140]" = 0x6007ec
+    "Bit field mask[140]" = 0xFFFFFFFF
+    "Value[140]" = 0x2f
+    "Register address[141]" = 0x6007f0
+    "Bit field mask[141]" = 0xFFFFFFFF
+    "Value[141]" = 0x2f
+    "Register address[142]" = 0x6007f4
+    "Bit field mask[142]" = 0xFFFFFFFF
+    "Value[142]" = 0x2f
+    "Register address[143]" = 0x6009e0
+    "Bit field mask[143]" = 0xFFFFFFFF
+    "Value[143]" = 0x00a5
+    "Register address[144]" = 0x60080c
+    "Bit field mask[144]" = 0xFFFFFFFF
+    "Value[144]" = 0x6c
+    "Register address[145]" = 0x60081c
+    "Bit field mask[145]" = 0xFFFFFFFF
+    "Value[145]" = 0x90
+    "Register address[146]" = 0x600830
+    "Bit field mask[146]" = 0xFFFFFFFF
+    "Value[146]" = 0x4c
+    "Register address[147]" = 0x600864
+    "Bit field mask[147]" = 0xFFFFFFFF
+    "Value[147]" = 0x0c
+    "Register address[148]" = 0x600874
+    "Bit field mask[148]" = 0xFFFFFFFF
+    "Value[148]" = 0x0a
+    "Register address[149]" = 0x600890
+    "Bit field mask[149]" = 0xFFFFFFFF
+    "Value[149]" = 0x001e
+    "Register address[150]" = 0x600894
+    "Bit field mask[150]" = 0xFFFFFFFF
+    "Value[150]" = 0x08
+    "Register address[151]" = 0x600898
+    "Bit field mask[151]" = 0xFFFFFFFF
+    "Value[151]" = 0x000d
+    "Register address[152]" = 0x60089c
+    "Bit field mask[152]" = 0xFFFFFFFF
+    "Value[152]" = 0x14
+    "Register address[153]" = 0x60093c
+    "Bit field mask[153]" = 0xFFFFFFFF
+    "Value[153]" = 0x00
+    "Register address[154]" = 0x600944
+    "Bit field mask[154]" = 0xFFFFFFFF
+    "Value[154]" = 0x08
+    "Register address[155]" = 0x600948
+    "Bit field mask[155]" = 0xFFFFFFFF
+    "Value[155]" = 0x00
+    "Register address[156]" = 0x60094c
+    "Bit field mask[156]" = 0xFFFFFFFF
+    "Value[156]" = 0x08
+    "Register address[157]" = 0x6009dc
+    "Bit field mask[157]" = 0xFFFFFFFF
+    "Value[157]" = 0x0014
+    "Register address[158]" = 0x600a50
+    "Bit field mask[158]" = 0xFFFFFFFF
+    "Value[158]" = 0x0f
+    "Register address[159]" = 0x600a7c
+    "Bit field mask[159]" = 0xFFFFFFFF
+    "Value[159]" = 0x40
+    "Register address[160]" = 0x600a80
+    "Bit field mask[160]" = 0xFFFFFFFF
+    "Value[160]" = 0x0024
+    "Register address[161]" = 0x600a84
+    "Bit field mask[161]" = 0xFFFFFFFF
+    "Value[161]" = 0x0010
+    "Register address[162]" = 0x600b80
+    "Bit field mask[162]" = 0xFFFFFFFF
+    "Value[162]" = 0x0010
+    "Register address[163]" = 0x600ae4
+    "Bit field mask[163]" = 0xFFFFFFFF
+    "Value[163]" = 0x03
+    "Register address[164]" = 0x600b48
+    "Bit field mask[164]" = 0xFFFFFFFF
+    "Value[164]" = 0x22
+    "Register address[165]" = 0x600bd0
+    "Bit field mask[165]" = 0xFFFFFFFF
+    "Value[165]" = 0x01
+    "Register address[166]" = 0x640018
+    "Bit field mask[166]" = 0xFFFFFFFF
+    "Value[166]" = 0x00000208
+    "Register address[167]" = 0x640048
+    "Bit field mask[167]" = 0xFFFFFFFF
+    "Value[167]" = 0x00002004
+    "Register address[168]" = 0x640070
+    "Bit field mask[168]" = 0xFFFFFFFF
+    "Value[168]" = 0x0000ade4
+    "Register address[169]" = 0x64082c
+    "Bit field mask[169]" = 0xFFFFFFFF
+    "Value[169]" = 0x0120
+    "Register address[170]" = 0x00640830
+    "Bit field mask[170]" = 0x0000000E
+    "Value[170]" = 0x0e
+    "Register address[171]" = 0x640834
+    "Bit field mask[171]" = 0xFFFFFFFF
+    "Value[171]" = 0x0000
+    "Register address[172]" = 0x640844
+    "Bit field mask[172]" = 0xFFFFFFFF
+    "Value[172]" = 0x1018
+    "Register address[173]" = 0x640848
+    "Bit field mask[173]" = 0xFFFFFFFF
+    "Value[173]" = 0x78b1
+    "Register address[174]" = 0x6408a8
+    "Bit field mask[174]" = 0xFFFFFFFF
+    "Value[174]" = 0x90
+    "Register address[175]" = 0x640950
+    "Bit field mask[175]" = 0xFFFFFFFF
+    "Value[175]" = 0x10
+    "Register address[176]" = 0x640620
+    "Bit field mask[176]" = 0xFFFFFFFF
+    "Value[176]" = 0x1FFF
+    "Register address[177]" = 0x64061c
+    "Bit field mask[177]" = 0xFFFFFFFF
+    "Value[177]" = 0x09F8
+    "Register address[178]" = 0x640604
+    "Bit field mask[178]" = 0xFFFFFFFF
+    "Value[178]" = 0x0081
+    "Register address[179]" = 0x64060c
+    "Bit field mask[179]" = 0xFFFFFFFF
+    "Value[179]" = 0x0CB8
+    "Register address[180]" = 0x640608
+      "Bit field mask[180]" = 0xFFFFFFFF
+               "Value[180]" = 0x21e
+    "Register address[181]" = 0x640618
+      "Bit field mask[181]" = 0xFFFFFFFF
+               "Value[181]" = 0x3cfe
+   "Register address[182]" = 0x640600
+      "Bit field mask[182]" = 0xFFFFFFFF
+               "Value[182]" = 0xC
+    "Register address[183]" = 0x640624
+    "Bit field mask[183]" = 0xFFFFFFFF
+    "Value[183]" = 0x0fff
+     "Register address[184]" = 0x4106e4
+      "Bit field mask[184]" = 0xFFFFFFFF
+               "Value[184]" = 0xa598
+    "Register address[185]" = 0x006001c8
+      "Bit field mask[185]" = 0xFFFFFFFF
+               "Value[185]" = 0x26
+    "Register address[186]" = 0x006001d0
+      "Bit field mask[186]" = 0xFFFFFFFF
+               "Value[186]" = 0x96
+    "Register address[187]" = 0x004104c8
+      "Bit field mask[187]" = 0xFFFFFFFF
+               "Value[187]" = 0x852a
+    "Register address[188]" = 0x004104d8
+    "Bit field mask[188]" = 0xFFFFFFFF
+    "Value[188]" = 0x8434
+    "Register address[189]" = 0x0041016c
+    "Bit field mask[189]" = 0xFFFFFFFF
+    "Value[189]" = 0x06bb
+    "Register address[190]" = 0x0041037c
+    "Bit field mask[190]" = 0xFFFFFFFF
+    "Value[190]" = 0x06bb
+    "Register address[191]" = 0x0041042c
+    "Bit field mask[191]" = 0xFFFFFFFF
+    "Value[191]" = 0x00bb
+    "Register address[192]" = 0x00410784
+    "Bit field mask[192]" = 0xFFFFFFFF
+    "Value[192]" = 0x8981
+    "Register address[193]" = 0x0060080c
+    "Bit field mask[193]" = 0xFFFFFFFF
+    "Value[193]" = 0x0000
+    "Register address[194]" = 0x4100c8
+    "Bit field mask[194]" = 0xFFFFFFFF
+    "Value[194]" = 0xfac5
+    "Register address[195]" = 0x00320000
+    "Bit field mask[195]"   = 0x000000F0
+    "Value[195]" = 0x60
+    "Register address[196]" = 0x600b50
+    "Bit field mask[196]"   = 0xFF
+    "Value[196]" = 0xc2
+    "Register address[197]" = 0x4104d4
+    "Bit field mask[197]"   = 0xFFFF
+    "Value[197]" = 0x8636
+    "Register address[198]" = 0x600388
+    "Bit field mask[198]" = 0xFF
+    "Value[198]" = 0x0
+    "Register address[199]" = 0x60038c
+    "Bit field mask[199]"   = 0xFF
+    "Value[199]" = 0x0
+    "Register address[200]" = 0x600390
+    "Bit field mask[200]"   = 0xFF
+    "Value[200]" = 0x0
+    "Register address[201]" = 0x600394
+    "Bit field mask[201]"   = 0xFF
+    "Value[201]" = 0x0
+    "Register address[202]" = 0x600398
+    "Bit field mask[202]"   = 0xFF
+    "Value[202]" = 0x0
+    "Register address[203]" = 0x6003ac
+    "Bit field mask[203]"   = 0xFF
+    "Value[203]" = 0x0
+    "Register address[204]" = 0x6007e0
+    "Bit field mask[204]"   = 0xFF
+    "Value[204]" = 0x84
+    "Register address[205]" = 0x6007e4
+    "Bit field mask[205]"   = 0xFF
+    "Value[205]" = 0x84
+    "Register address[206]" = 0x6007e8
+    "Bit field mask[206]"   = 0xFF
+    "Value[206]" = 0x84
+    "Register address[207]" = 0x410430
+    "Bit field mask[207]"   = 0xFFFF
+    "Value[207]" = 0x461
+    "Register address[208]" = 0x410500
+    "Bit field mask[208]"   = 0xFFFF
+    "Value[208]" = 0x261
+    "Register address[209]" = 0x600ab8
+    "Bit field mask[209]"   = 0xFF
+    "Value[209]" = 0x00
+    "Register address[210]" = 0x600b74
+    "Bit field mask[210]"   = 0xFF
+    "Value[210]" = 0x20
+    "Register address[211]" = 0x600a50
+    "Bit field mask[211]"   = 0xFF
+    "Value[211]" = 0x7
+    "Register address[212]" = 0x600338
+    "Bit field mask[212]"   = 0xFF
+    "Value[212]" = 0x29
+    "Register address[213]" = 0x600328
+    "Bit field mask[213]"   = 0xFF
+    "Value[213]" = 0x82
+    "Register address[214]" = 0x6400a8
+    "Bit field mask[214]"   = 0xFFFFFFFF
+    "Value[214]" = 0x0
+    "Register address[215]" = 0x64067c
+    "Bit field mask[215]"   = 0x00000001
+    "Value[215]" = 0x1
+    "Register address[216]" = 0x650040
+    "Bit field mask[216]" = 0xFFFFFFFF
+    "Value[216]" = 0x0B
+    "Register address[217]" = 0x650200
+    "Bit field mask[217]" = 0xFFFFFFFF
+    "Value[217]" = 0x00
+    "Register address[218]" = 0x640850
+    "Bit field mask[218]"   = 0xFFFF
+    "Value[218]" = 0x8001
+    "Register address[219]" = 0x600294
+    "Bit field mask[219]"   = 0xFF
+    "Value[219]" = 0x0F
+    "Register address[220]" = 0x6002C0
+    "Bit field mask[220]"   = 0xFF
+    "Value[220]" = 0x0F
+    "Register address[221]" = 0x6007ac
+    "Bit field mask[221]"   = 0xFF
+    "Value[221]" = 0x0
+    "Register address[222]" = 0x6007b0
+    "Bit field mask[222]"   = 0xFF
+    "Value[222]" = 0x0
+    "Register address[223]" = 0x0032007c
+    "Bit field mask[223]" = 0xFFFFFFFF
+    "Value[223]" = 0xB9BBB9B9
+    "Register address[224]" = 0x0065402c
+    "Bit field mask[224]" = 0x007F7F00
+    "Value[224]" = 0x007F7F00
+}
+ENTRY "Data" = "agcCtrl9"
+{
+    "Address"=0x4106e4
+    "Data"=
+    COMMENTED_BYTES
+    {
+         <hex>
+         96 a5 00 00
+    } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "agc_bank_init_val_bt_pri_dlna_HP"
+{
+    "Address" =  0x00200be0
+        "Data" =
+        COMMENTED_BYTES
+        {
+            <hex>
+            00 00 00 00 00 00 00 00
+            08 08 00 00 08 08 00 00
+            09 09 00 00 09 09 00 00
+            11 11 00 00 11 11 00 00
+            12 12 00 00 12 12 00 00
+            13 13 00 00 13 13 00 00
+            49 49 00 00 49 49 00 00
+            51 51 00 00 51 51 00 00
+            52 52 00 00 52 52 00 00
+            53 53 00 00 53 53 00 00
+            5B 5B 00 00 5B 5B 00 00
+            5C 5C 00 00 5C 5C 00 00
+            64 64 00 00 64 64 00 00
+            65 65 00 00 65 65 00 00
+            66 66 00 00 66 66 00 00
+            6E 6E 00 00 6E 6E 00 00
+            6F 6F 00 00 6F 6F 00 00
+            B4 B4 00 00 B4 B4 00 00
+            BC BC 00 00 BC BC 00 00
+            BD BD 00 00 BD BD 00 00
+            BE BE 00 00 BE BE 00 00
+            BF BF 00 00 BF BF 00 00
+            FE FE 00 00 FE FE 00 00
+            FE FE 00 00 FE FE 00 00
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "agc_bank_init_val_bt_pri_slna_HP"
+{
+    "Address" =  0x00200d60
+        "Data" =
+        COMMENTED_BYTES
+        {
+            <hex>
+            08 08 00 00 08 08 00 00
+            09 09 00 00 09 09 00 00
+            0A 0A 00 00 0A 0A 00 00
+            12 12 00 00 12 12 00 00
+            1A 1A 00 00 1A 1A 00 00
+            48 48 00 00 48 48 00 00
+            50 50 00 00 50 50 00 00
+            51 51 00 00 51 51 00 00
+            52 52 00 00 52 52 00 00
+            53 53 00 00 53 53 00 00
+            54 54 00 00 54 54 00 00
+            55 55 00 00 55 55 00 00
+            5D 5D 00 00 5D 5D 00 00
+            65 65 00 00 65 65 00 00
+            66 66 00 00 66 66 00 00
+            6E 6E 00 00 6E 6E 00 00
+            76 76 00 00 76 76 00 00
+            7E 7E 00 00 7E 7E 00 00
+            BC BC 00 00 BC BC 00 00
+            BD BD 00 00 BD BD 00 00
+            BE BE 00 00 BE BE 00 00
+            BF BF 00 00 BF BF 00 00
+            FF FF 00 00 FF FF 00 00
+            FF FF 00 00 FF FF 00 00
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "g_rfm_hwPwrLUT_txRfSel1"
+{
+    "Address" =  0x00200eb8
+        "Data" =
+        COMMENTED_BYTES
+        {
+            <hex>
+            00
+            32
+            e8 03 00
+            e8 13 00
+            e8 1f 00
+            e8 27 00
+            e8 33 00
+            e8 2b 00
+            a6 26 00
+            ea 33 00
+            9e 2e 00
+            5e 2e 00
+            1e 36 00
+            de 35 00
+            9e 35 00
+            cd 3e 00
+            4d 3e 00
+            4b 3e 00
+            0b 3e 00
+            ca 3d 00
+            58 3c 00
+            4a 3d 00
+            48 3d 00
+            c9 3c 00
+            89 3c 00
+            49 3c 00
+            48 3c 00
+            46 3c 00
+            45 3c 00
+            44 3c 00
+            05 3c 00
+            04 3c 00
+            83 3c 00
+            82 3d 00
+            02 3d 00
+            82 3c 00
+            03 3c 00
+            02 3c 00
+            45 f8 0a
+            44 f8 0a
+            44 38 0b
+            45 3c 0c
+            42 b8 0a
+            42 38 0a
+            42 38 0a
+            42 38 0a
+            42 38 0a
+            42 38 0a
+            42 38 0a
+            42 38 0a
+            42 38 0a
+            01 bc 0c
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "g_rfm_hwPwrLUT_txRfSel2"
+{
+    "Address" =  0x00200f50
+        "Data" =
+        COMMENTED_BYTES
+        {
+            <hex>
+            00
+            32
+            C0 01 00
+            80 01 00
+            40 01 00
+            C0 00 00
+            00 01 00
+            80 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+            40 00 00
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "lculp_multiAdvFeatureEnable"
+{
+    "Address" =  0x00204c10
+        "Data" =
+        COMMENTED_BYTES
+        {
+            <hex>
+            01
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "g_MultiAdvLowTxPwr"
+{
+    "Address" =  0x00203472
+        "Data" =
+        COMMENTED_BYTES
+        {
+            <hex>
+            01
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "g_MultiAdv_LookUpTable"
+{
+    "Address" =  0x00201520
+        "Data" =
+        COMMENTED_BYTES
+        {
+            <hex>
+                        00 00 01 00 02 00 03 00 04 00 05 00 06 00 07 00 08 00 09 00 FF 00 0B 00 0C 00 0D 00
+                        01 0D 01 0A 01 09 01 05 01 01 01 FD 01 F9 01 F5 01 F1 01 CE 01 0A 01 0A 01 0A 01 0A
+            9C 01 60 00 00 00 03 00 06 00 0B 00 0F 00 14 00 19 00 1E 00 23 00 31 00 01 00 01 00 01 00 01 00
+            98 02 60 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 0E 00 01 00 0E 00 0E 00 0E 00 0E 00
+            a8 04 60 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 71 00 77 00 77 00 77 00 77 00
+            ac 04 60 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 71 00 77 00 77 00 77 00 77 00
+            b0 04 60 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 71 00 77 00 77 00 77 00 77 00
+            b4 04 60 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 71 00 77 00 77 00 77 00 77 00
+            b8 04 60 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 77 00 71 00 77 00 77 00 77 00 77 00
+            00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "Power Table Update"
+{
+    "Address" =  0x00216288
+        "Data" =
+        COMMENTED_BYTES
+        {
+            <hex>
+            00
+            00 06 0B 0F 14 19 1E 23
+            00 04 0A 0E 13 18 1C 20
+            03 00 00 00 00 00 00 00
+            0D 09 05 01 FD F9 F5 F1
+            0A 06 02 FE FA F6 F2 EE
+            0D 0D 0D 0D 0D 0D 0D 0D
+        } END_COMMENTED_BYTES
+}
+ENTRY "Tx Power Table For Class 1.5 Devices With FAB ID"
+{
+    "FAB ID"                         = 0
+    "Radio Tx power mode"            = "Class 1.5 mode"
+    "Power table length"             =   8
+    "Testmode power table length"    =   8
+    "Tx power in dB[0]"              =   13
+    "Register value[0]"              =   0
+    "Tx power in dB[1]"              =   9
+    "Register value[1]"              =   1
+    "Tx power in dB[2]"              =   5
+    "Register value[2]"              =   2
+    "Tx power in dB[3]"              =   1
+    "Register value[3]"              =   3
+    "Tx power in dB[4]"              =  -3
+    "Register value[4]"              =   4
+    "Tx power in dB[5]"              =  -7
+    "Register value[5]"              =   5
+    "Tx power in dB[6]"              =  -11
+    "Register value[6]"              =   6
+    "Tx power in dB[7]"              =  -15
+    "Register value[7]"              =   7
+    "Testmode Tx power in dB[0]"     =   13
+    "Testmode register value[0]"     =   0
+    "Testmode Tx power in dB[1]"     =   9
+    "Testmode register value[1]"     =   1
+    "Testmode Tx power in dB[2]"     =   5
+    "Testmode register value[2]"     =   2
+    "Testmode Tx power in dB[3]"     =   1
+    "Testmode register value[3]"     =   3
+    "Testmode Tx power in dB[4]"     =  -3
+    "Testmode register value[4]"     =   4
+    "Testmode Tx power in dB[5]"     =  -7
+    "Testmode register value[5]"     =   5
+    "Testmode Tx power in dB[6]"     =  -11
+    "Testmode register value[6]"     =   6
+    "Testmode Tx power in dB[7]"     =  -15
+    "Testmode register value[7]"     =   7
+}
+ENTRY "RFP Tuning Configuration"
+{
+          "TSSI Config" = 0x1B
+            "LO IQ Cal Config" = 0x05
+            "TSSI Cal Maximum number of iterations" = 20
+            "Tssi Cal Search Threshold" = 10
+            "Tssi Cal External Factor" = 0x400
+            "Tssi Cal Correction Factor" = 0x00
+            "LO IQ Cal Max Iterations" = 10
+            "LO IQ calibration RSSI threshold" = 0
+            "LO calibration RSSI invalid" = 3070
+            "LO calibration for I initial LOW" = -200
+            "LO calibration for I initial HIGH" = 200
+            "LO calibration for Q initial LOW" = -200
+            "LO calibration for Q initial HIGH" = 200
+            "IQ Kappa Theta calibration for max iterations" = 10
+            "IQ Kappa Theta acceptable final search threshold" = 0
+            "IQ Kappa Theta Max RssiValue" = 3070
+            "IQ calibration for Kappa initial LOW" = -11
+            "IQ calibration for Kappa initial HIGH" = 11
+            "IQ calibration for Theta initial LOW" = -11
+            "IQ calibration for Theta initial HIGH" = 11
+}
+ENTRY "Data" = "TSSICAL_TX_MODE"
+{
+    "Address" =  0x00203a63
+        "Data" =
+        COMMENTED_BYTES
+        {
+            <hex>
+            00 01 FF
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "TSSI Config TX20"
+{
+    "Address" =  0x00203a67
+        "Data" =
+        COMMENTED_BYTES
+        {
+            <hex>
+            03
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "g_Tx20TssiPA20"
+{
+    "Address" =  0x002017fe
+        "Data" =
+        COMMENTED_BYTES
+        {
+            <hex>
+            01
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "g_iqcal_sweepEn"
+{
+    "Address" =  0x00202b37
+        "Data" =
+        COMMENTED_BYTES
+        {
+            <hex>
+            00
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "IQCal_Pad_BDR"
+{
+    "Address" =  0x0020369c
+        "Data" =
+        COMMENTED_BYTES
+        {
+            <hex>
+            C8 C8 C8 C8 C8 C8 C8 C8 C8
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "IQCal_Pad_EDR"
+{
+    "Address" =  0x002036a6
+        "Data" =
+        COMMENTED_BYTES
+        {
+            <hex>
+            C8 C8 C8 C8 C8 C8 C8 C8 C8
+        } END_COMMENTED_BYTES
+}
+ENTRY "Tssical Parameter Table"
+{
+    "Num TSteps"        = 6
+    "Tmin[0]"           = 10
+    "Tmin[1]"           = 35
+    "Tmin[2]"           = 60
+    "Tmin[3]"           = 90
+    "Tmin[4]"           = 110
+    "Tmin[5]"           = 125
+    "GfskRangeLow"     = 0x00
+    "GfskRangeHigh"    = 0xFF
+    "EdrRangeLow"      = 0x00
+    "EdrRangeHigh"     = 0xFF
+    "BleRangeLow"      = 0x00
+    "BleRangeHigh"     = 0xFF
+    "Num TssiTargets"  = 9
+    "GfskTarget[0][0]" = 270
+    "GfskTarget[0][1]" = 270
+    "GfskTarget[0][2]" = 270
+    "GfskTarget[0][3]" = 270
+    "GfskTarget[0][4]" = 270
+    "GfskTarget[0][5]" = 270
+    "GfskTarget[0][6]" = 270
+    "GfskTarget[0][7]" = 270
+    "GfskTarget[0][8]" = 270
+    "GfskTarget[1][0]" = 300
+    "GfskTarget[1][1]" = 300
+    "GfskTarget[1][2]" = 300
+    "GfskTarget[1][3]" = 300
+    "GfskTarget[1][4]" = 300
+    "GfskTarget[1][5]" = 300
+    "GfskTarget[1][6]" = 300
+    "GfskTarget[1][7]" = 300
+    "GfskTarget[1][8]" = 300
+    "GfskTarget[2][0]" = 340
+    "GfskTarget[2][1]" = 340
+    "GfskTarget[2][2]" = 340
+    "GfskTarget[2][3]" = 340
+    "GfskTarget[2][4]" = 340
+    "GfskTarget[2][5]" = 340
+    "GfskTarget[2][6]" = 340
+    "GfskTarget[2][7]" = 340
+    "GfskTarget[2][8]" = 340
+    "GfskTarget[3][0]" = 400
+    "GfskTarget[3][1]" = 400
+    "GfskTarget[3][2]" = 400
+    "GfskTarget[3][3]" = 400
+    "GfskTarget[3][4]" = 400
+    "GfskTarget[3][5]" = 400
+    "GfskTarget[3][6]" = 400
+    "GfskTarget[3][7]" = 400
+    "GfskTarget[3][8]" = 400
+    "GfskTarget[4][0]" = 400
+    "GfskTarget[4][1]" = 400
+    "GfskTarget[4][2]" = 400
+    "GfskTarget[4][3]" = 400
+    "GfskTarget[4][4]" = 400
+    "GfskTarget[4][5]" = 400
+    "GfskTarget[4][6]" = 400
+    "GfskTarget[4][7]" = 400
+    "GfskTarget[4][8]" = 400
+    "GfskTarget[5][0]" = 450
+    "GfskTarget[5][1]" = 450
+    "GfskTarget[5][2]" = 450
+    "GfskTarget[5][3]" = 450
+    "GfskTarget[5][4]" = 450
+    "GfskTarget[5][5]" = 440
+    "GfskTarget[5][6]" = 440
+    "GfskTarget[5][7]" = 440
+    "GfskTarget[5][8]" = 440
+    "EdrTarget[0][0]" = 215
+    "EdrTarget[0][1]" = 215
+    "EdrTarget[0][2]" = 215
+    "EdrTarget[0][3]" = 215
+    "EdrTarget[0][4]" = 215
+    "EdrTarget[0][5]" = 215
+    "EdrTarget[0][6]" = 215
+    "EdrTarget[0][7]" = 215
+    "EdrTarget[0][8]" = 215
+    "EdrTarget[1][0]" = 250
+    "EdrTarget[1][1]" = 250
+    "EdrTarget[1][2]" = 250
+    "EdrTarget[1][3]" = 250
+    "EdrTarget[1][4]" = 250
+    "EdrTarget[1][5]" = 250
+    "EdrTarget[1][6]" = 250
+    "EdrTarget[1][7]" = 250
+    "EdrTarget[1][8]" = 250
+    "EdrTarget[2][0]" = 250
+    "EdrTarget[2][1]" = 250
+    "EdrTarget[2][2]" = 250
+    "EdrTarget[2][3]" = 250
+    "EdrTarget[2][4]" = 250
+    "EdrTarget[2][5]" = 250
+    "EdrTarget[2][6]" = 250
+    "EdrTarget[2][7]" = 250
+    "EdrTarget[2][8]" = 250
+    "EdrTarget[3][0]" = 300
+    "EdrTarget[3][1]" = 300
+    "EdrTarget[3][2]" = 300
+    "EdrTarget[3][3]" = 300
+    "EdrTarget[3][4]" = 300
+    "EdrTarget[3][5]" = 300
+    "EdrTarget[3][6]" = 300
+    "EdrTarget[3][7]" = 300
+    "EdrTarget[3][8]" = 300
+    "EdrTarget[4][0]" = 310
+    "EdrTarget[4][1]" = 310
+    "EdrTarget[4][2]" = 310
+    "EdrTarget[4][3]" = 310
+    "EdrTarget[4][4]" = 310
+    "EdrTarget[4][5]" = 310
+    "EdrTarget[4][6]" = 310
+    "EdrTarget[4][7]" = 310
+    "EdrTarget[4][8]" = 310
+    "EdrTarget[5][0]" = 330
+    "EdrTarget[5][1]" = 320
+    "EdrTarget[5][2]" = 320
+    "EdrTarget[5][3]" = 320
+    "EdrTarget[5][4]" = 320
+    "EdrTarget[5][5]" = 320
+    "EdrTarget[5][6]" = 320
+    "EdrTarget[5][7]" = 320
+    "EdrTarget[5][8]" = 320
+    "BleTarget[0][0]" = 255
+    "BleTarget[0][1]" = 255
+    "BleTarget[0][2]" = 250
+    "BleTarget[0][3]" = 250
+    "BleTarget[0][4]" = 250
+    "BleTarget[0][5]" = 245
+    "BleTarget[0][6]" = 240
+    "BleTarget[0][7]" = 235
+    "BleTarget[0][8]" = 235
+    "BleTarget[1][0]" = 250
+    "BleTarget[1][1]" = 250
+    "BleTarget[1][2]" = 250
+    "BleTarget[1][3]" = 250
+    "BleTarget[1][4]" = 250
+    "BleTarget[1][5]" = 250
+    "BleTarget[1][6]" = 250
+    "BleTarget[1][7]" = 250
+    "BleTarget[1][8]" = 250
+    "BleTarget[2][0]" = 290
+    "BleTarget[2][1]" = 290
+    "BleTarget[2][2]" = 290
+    "BleTarget[2][3]" = 290
+    "BleTarget[2][4]" = 290
+    "BleTarget[2][5]" = 290
+    "BleTarget[2][6]" = 290
+    "BleTarget[2][7]" = 290
+    "BleTarget[2][8]" = 290
+    "BleTarget[3][0]" = 325
+    "BleTarget[3][1]" = 325
+    "BleTarget[3][2]" = 325
+    "BleTarget[3][3]" = 325
+    "BleTarget[3][4]" = 325
+    "BleTarget[3][5]" = 325
+    "BleTarget[3][6]" = 320
+    "BleTarget[3][7]" = 315
+    "BleTarget[3][8]" = 315
+    "BleTarget[4][0]" = 350
+    "BleTarget[4][1]" = 350
+    "BleTarget[4][2]" = 350
+    "BleTarget[4][3]" = 350
+    "BleTarget[4][4]" = 350
+    "BleTarget[4][5]" = 350
+    "BleTarget[4][6]" = 350
+    "BleTarget[4][7]" = 340
+    "BleTarget[4][8]" = 340
+    "BleTarget[5][0]" = 360
+    "BleTarget[5][1]" = 350
+    "BleTarget[5][2]" = 350
+    "BleTarget[5][3]" = 350
+    "BleTarget[5][4]" = 350
+    "BleTarget[5][5]" = 350
+    "BleTarget[5][6]" = 350
+    "BleTarget[5][7]" = 350
+    "BleTarget[5][8]" = 350
+}
+ENTRY "Tssical Parameter Table TX20"
+{
+    "Num TSteps"        = 6
+    "Tmin[0]"           = 10
+    "Tmin[1]"           = 35
+    "Tmin[2]"           = 60
+    "Tmin[3]"           = 90
+    "Tmin[4]"           = 110
+    "Tmin[5]"           = 125
+    "GfskRangeLow"     = 0x04
+    "GfskRangeHigh"    = 0xFF
+    "EdrRangeLow"      = 0x04
+    "EdrRangeHigh"     = 0xFF
+    "BleRangeLow"      = 0x04
+    "BleRangeHigh"     = 0xFF
+    "Num TssiTargets"  = 9
+    "GfskTarget[0][0]" = 800
+    "GfskTarget[0][1]" = 800
+    "GfskTarget[0][2]" = 800
+    "GfskTarget[0][3]" = 800
+    "GfskTarget[0][4]" = 800
+    "GfskTarget[0][5]" = 800
+    "GfskTarget[0][6]" = 800
+    "GfskTarget[0][7]" = 800
+    "GfskTarget[0][8]" = 800
+    "GfskTarget[1][0]" = 780
+    "GfskTarget[1][1]" = 780
+    "GfskTarget[1][2]" = 780
+    "GfskTarget[1][3]" = 780
+    "GfskTarget[1][4]" = 780
+    "GfskTarget[1][5]" = 780
+    "GfskTarget[1][6]" = 780
+    "GfskTarget[1][7]" = 780
+    "GfskTarget[1][8]" = 780
+    "GfskTarget[2][0]" = 750
+    "GfskTarget[2][1]" = 750
+    "GfskTarget[2][2]" = 750
+    "GfskTarget[2][3]" = 750
+    "GfskTarget[2][4]" = 750
+    "GfskTarget[2][5]" = 750
+    "GfskTarget[2][6]" = 750
+    "GfskTarget[2][7]" = 750
+    "GfskTarget[2][8]" = 750
+    "GfskTarget[3][0]" = 780
+    "GfskTarget[3][1]" = 780
+    "GfskTarget[3][2]" = 780
+    "GfskTarget[3][3]" = 780
+    "GfskTarget[3][4]" = 780
+    "GfskTarget[3][5]" = 780
+    "GfskTarget[3][6]" = 780
+    "GfskTarget[3][7]" = 780
+    "GfskTarget[3][8]" = 780
+    "GfskTarget[4][0]" = 800
+    "GfskTarget[4][1]" = 800
+    "GfskTarget[4][2]" = 800
+    "GfskTarget[4][3]" = 800
+    "GfskTarget[4][4]" = 800
+    "GfskTarget[4][5]" = 800
+    "GfskTarget[4][6]" = 800
+    "GfskTarget[4][7]" = 800
+    "GfskTarget[4][8]" = 800
+    "GfskTarget[5][0]" = 810
+    "GfskTarget[5][1]" = 810
+    "GfskTarget[5][2]" = 810
+    "GfskTarget[5][3]" = 810
+    "GfskTarget[5][4]" = 810
+    "GfskTarget[5][5]" = 810
+    "GfskTarget[5][6]" = 810
+    "GfskTarget[5][7]" = 810
+    "GfskTarget[5][8]" = 810
+    "EdrTarget[0][0]" = 460
+    "EdrTarget[0][1]" = 460
+    "EdrTarget[0][2]" = 460
+    "EdrTarget[0][3]" = 460
+    "EdrTarget[0][4]" = 460
+    "EdrTarget[0][5]" = 460
+    "EdrTarget[0][6]" = 460
+    "EdrTarget[0][7]" = 460
+    "EdrTarget[0][8]" = 460
+    "EdrTarget[1][0]" = 440
+    "EdrTarget[1][1]" = 440
+    "EdrTarget[1][2]" = 440
+    "EdrTarget[1][3]" = 440
+    "EdrTarget[1][4]" = 440
+    "EdrTarget[1][5]" = 440
+    "EdrTarget[1][6]" = 440
+    "EdrTarget[1][7]" = 440
+    "EdrTarget[1][8]" = 440
+    "EdrTarget[2][0]" = 450
+    "EdrTarget[2][1]" = 450
+    "EdrTarget[2][2]" = 450
+    "EdrTarget[2][3]" = 450
+    "EdrTarget[2][4]" = 450
+    "EdrTarget[2][5]" = 450
+    "EdrTarget[2][6]" = 450
+    "EdrTarget[2][7]" = 450
+    "EdrTarget[2][8]" = 450
+    "EdrTarget[3][0]" = 440
+    "EdrTarget[3][1]" = 440
+    "EdrTarget[3][2]" = 440
+    "EdrTarget[3][3]" = 440
+    "EdrTarget[3][4]" = 440
+    "EdrTarget[3][5]" = 440
+    "EdrTarget[3][6]" = 440
+    "EdrTarget[3][7]" = 440
+    "EdrTarget[3][8]" = 440
+    "EdrTarget[4][0]" = 440
+    "EdrTarget[4][1]" = 440
+    "EdrTarget[4][2]" = 440
+    "EdrTarget[4][3]" = 440
+    "EdrTarget[4][4]" = 440
+    "EdrTarget[4][5]" = 440
+    "EdrTarget[4][6]" = 440
+    "EdrTarget[4][7]" = 440
+    "EdrTarget[4][8]" = 440
+    "EdrTarget[5][0]" = 380
+    "EdrTarget[5][1]" = 380
+    "EdrTarget[5][2]" = 380
+    "EdrTarget[5][3]" = 380
+    "EdrTarget[5][4]" = 380
+    "EdrTarget[5][5]" = 380
+    "EdrTarget[5][6]" = 380
+    "EdrTarget[5][7]" = 380
+    "EdrTarget[5][8]" = 380
+    "BleTarget[0][0]" = 780
+    "BleTarget[0][1]" = 780
+    "BleTarget[0][2]" = 780
+    "BleTarget[0][3]" = 780
+    "BleTarget[0][4]" = 780
+    "BleTarget[0][5]" = 780
+    "BleTarget[0][6]" = 780
+    "BleTarget[0][7]" = 780
+    "BleTarget[0][8]" = 780
+    "BleTarget[1][0]" = 740
+    "BleTarget[1][1]" = 740
+    "BleTarget[1][2]" = 740
+    "BleTarget[1][3]" = 740
+    "BleTarget[1][4]" = 740
+    "BleTarget[1][5]" = 740
+    "BleTarget[1][6]" = 740
+    "BleTarget[1][7]" = 740
+    "BleTarget[1][8]" = 740
+    "BleTarget[2][0]" = 750
+    "BleTarget[2][1]" = 750
+    "BleTarget[2][2]" = 750
+    "BleTarget[2][3]" = 750
+    "BleTarget[2][4]" = 750
+    "BleTarget[2][5]" = 750
+    "BleTarget[2][6]" = 750
+    "BleTarget[2][7]" = 750
+    "BleTarget[2][8]" = 750
+    "BleTarget[3][0]" = 780
+    "BleTarget[3][1]" = 780
+    "BleTarget[3][2]" = 780
+    "BleTarget[3][3]" = 780
+    "BleTarget[3][4]" = 780
+    "BleTarget[3][5]" = 780
+    "BleTarget[3][6]" = 780
+    "BleTarget[3][7]" = 780
+    "BleTarget[3][8]" = 780
+    "BleTarget[4][0]" = 800
+    "BleTarget[4][1]" = 800
+    "BleTarget[4][2]" = 800
+    "BleTarget[4][3]" = 800
+    "BleTarget[4][4]" = 800
+    "BleTarget[4][5]" = 800
+    "BleTarget[4][6]" = 800
+    "BleTarget[4][7]" = 800
+    "BleTarget[4][8]" = 800
+    "BleTarget[5][0]" = 800
+    "BleTarget[5][1]" = 800
+    "BleTarget[5][2]" = 800
+    "BleTarget[5][3]" = 800
+    "BleTarget[5][4]" = 800
+    "BleTarget[5][5]" = 800
+    "BleTarget[5][6]" = 800
+    "BleTarget[5][7]" = 800
+    "BleTarget[5][8]" = 800
+}
+ENTRY "Data"="CCDB_Fromcgs"
+{
+    "Address"=0x00203b85
+    "Data"=
+        COMMENTED_BYTES
+        {
+           <hex>
+           01
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data"="default_country_code"
+{
+    "Address"=0x00203b86
+    "Data"=
+        COMMENTED_BYTES
+        {
+           <hex>
+           00
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "g_clock_pause_idx"
+{
+    "Address" = 0x00202d30
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+        02
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data" = "NEW_9BIN_TXCAL_enable"
+{
+    "Address" = 0x00203ba0
+    "Data" =
+    COMMENTED_BYTES
+    {
+         <hex>
+        01
+    }END_COMMENTED_BYTES
+}
+ENTRY "Data"= "CountryCode0_pcap1"
+{
+    "Address"=0x0020cd98
+    "Data"=
+        COMMENTED_BYTES
+        {
+           <hex>
+           07
+           80
+           01
+           07
+           00 06 0B 0F 14 19 1E 23
+           00 04 0A 0E 13 18 1C 20
+           00 06 0B 0F 14 19 1E 23
+           0D 09 05 01 FD F9 F5 F1
+           0A 06 02 FE FA F6 F2 EE
+           0D 09 05 01 FD F9 F5 F1
+           10 10 10 10 10 10 10 10
+           10 10 10 10 10 10 10 10
+           10 10 10 10 10 10 10 10
+           10
+           18
+           a5
+           00
+           00
+           00 00 00 00 00
+           00 00 00 00 00
+           00 00 00 00 00
+           00
+           18
+           a1
+           00
+           00
+           00 00 00 00 00
+           00 00 00 00 00
+           00 00 00 00 00
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data"= "CountryCode0_pcap0"
+{
+    "Address"=0x0020ce98
+    "Data"=
+        COMMENTED_BYTES
+        {
+           <hex>
+           01
+           80
+           00
+           07
+           00 04 05 0b 10 15 1A 1F
+           00 02 07 0A 0F 14 19 1E
+           00 00 00 00 00 00 00 00
+           10 0D 09 05 01 FD F9 F5
+           0D 09 05 01 FD F9 F5 F1
+           0D 0D 0D 0D 0D 0D 0D 0D
+           20 20 10 10 10 10 10 10
+           20 20 10 10 10 10 10 10
+           20 10 10 10 10 10 10 10
+           10
+           18
+           a5
+           00
+           00
+           00 00 00 00 00
+           00 00 00 00 00
+           00 00 00 00 00
+           00
+           18
+           a1
+           00
+           00
+           00 00 00 00 00
+           00 00 00 00 00
+           00 00 00 00 00
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data" = "txpwr_tca_from_cgs"
+{
+    "Address" = 0x0020bcd8
+    "Data"=
+        COMMENTED_BYTES
+        {
+           <hex>
+           05
+           44 42 45 44 41 40 3F 3F 3F
+           4F 4C 4F 4E 4C 4B 4A 4A 4A
+           5B 59 5B 5B 59 57 55 55 56
+           6B 69 6A 69 6A 67 65 67 67
+           79 75 77 75 77 73 73 75 75
+           8A 88 88 86 86 84 84 84 85
+           4B 48 4C 4A 47 46 44 44 44
+           5A 56 5A 58 55 54 52 52 53
+           68 64 68 66 64 63 62 62 63
+           7C 78 7C 7A 78 76 74 74 76
+           8D 89 8B 8B 89 87 85 85 87
+           A2 9F A1 A1 A1 9D 9B 9B 9F
+           44 42 45 44 41 40 3F 3F 3F
+           4F 4C 4F 4E 4C 4B 4A 4A 4A
+           5B 59 5B 5B 59 57 55 55 56
+           6B 69 6A 69 6A 67 65 67 67
+           79 75 77 75 77 73 73 75 75
+           8A 88 88 86 86 84 84 84 85
+           a5
+           4C 4C 4C 4C 4C 4C 4C 4C 4C
+           61 61 61 61 61 61 61 61 61
+           73 73 73 73 73 73 73 73 73
+           8A 8A 8A 8A 8A 8A 8A 8A 8A
+           91 91 91 91 91 91 91 91 91
+           B3 B3 B3 B3 B3 B3 B3 B3 B3
+           64 64 64 64 64 64 64 64 64
+           7B 7B 7B 7B 7B 7B 7B 7B 7B
+           90 90 90 90 90 90 90 90 90
+           A6 A6 A6 A6 A6 A6 A6 A6 A6
+           BA BA BA BA BA BA BA BA BA
+           CE CE CE CE CE CE CE CE CE
+           4A 4A 4A 4A 4A 4A 4A 4A 4A
+           50 50 50 50 50 50 50 50 50
+           5D 5D 5D 5D 5D 5D 5D 5D 5D
+           6D 6D 6D 6D 6D 6D 6D 6D 6D
+           79 79 79 79 79 79 79 79 79
+           89 89 89 89 89 89 89 89 89
+           a1
+           31 31 30 32 35 3A 3C 40 44
+           4A 47 45 45 47 4C 4F 53 57
+           69 65 61 5F 60 63 65 6A 6E
+           92 8C 84 7F 7E 82 83 88 8D
+           B6 AE A5 9D 9A 9C 9E A2 A9
+           E3 D9 CD C3 BF C3 C2 C8 D1
+           1B 1C 1D 1D 20 23 25 25 25
+           2A 29 29 29 2B 2D 2F 2F 2F
+           3F 3C 3A 37 39 39 3C 3B 3B
+           5C 56 51 4B 4B 49 4C 4A 4A
+           77 6F 65 5D 5B 57 5A 57 57
+           98 8C 80 73 6F 69 6B 67 67
+           31 31 30 32 35 3A 3C 40 44
+           4A 47 45 45 47 4C 4F 53 57
+           69 65 61 5F 60 63 65 6A 6E
+           92 8C 84 7F 7E 82 83 88 8D
+           B6 AE A5 9D 9A 9C 9E A2 A9
+           E3 D9 CD C3 BF C3 C2 C8 D1
+        } END_COMMENTED_BYTES
+}
+ENTRY "Data"="freq_list_from_cgs"
+{
+    "Address"=0x00203d10
+    "Data"=
+        COMMENTED_BYTES
+        {
+           <hex>
+           09
+           00 08 10 18 28 38 40 48 4E
+        } END_COMMENTED_BYTES
+}
+ENTRY "AFH Channel Classification Configuration"
+{
+    "afhccInterval" = 16
+    "scanType" = 1
+    "activeScanInterval" = 16
+    "reclaimCnt" = 20
+    "reclaimSnr" = 20
+    "targetPerGoodSig" = 26
+    "targetPerWeakSig" = 102
+    "wifiThreshold_bg" = 10
+    "wifiThreshold_n" = 21
+    "Threshold_reserved_1" = 0
+    "Threshold_reserved_2" = 0
+}
+ENTRY "AFH Channel Classification Internal Configuration"
+{
+    "bypassScan" = 0x0
+    "filterRxRssi" = 0x0
+    "longRSSIScanIntervalInLpo" = 0x0
+    "avoidLeAdChs" = 0x1
+    "enforceRules" = 0x1
+    "bypassCC" = 0x0
+    "considerSlaveMap" = 0x1
+    "scan_coex" = 0x1
+    "hdrFecTuple" = 0x0
+    "site_survey" = 0x0
+    "afhcc_log" = 0x0
+    "PLL_Settling_Time" = 40
+    "Extra_Settling_Time" = 80
+    "afhccAsscRuleEn" = 0x003fffff
+    "PER_Shift" = 5
+    "minPackets" = 3
+    "lazyResetTh" = 0x1f
+    "rssiReadTime" = 100
+    "rxSensitivity" = -82
+    "rxrssi_th" = -70
+    "condemnCnt" = 10
+    "condemnSnrGoodSig" = 5
+    "condemnSnrWeakSig" = 0
+    "regroupTh" = 0xFFFF
+    "syncToTh" = 7
+    "absCondemnTh" = -73
+}
+DIRECT_LOAD  = "CODE_AREA from tier2/Generic/UART/37_4MHz/wlcsp_ref3_dLNA_wiced/bld/CM/43012_ram_ext.elf"
+{
+	"Address" = 0x130300
+	"Data" =
+	COMMENTED_BYTES
+	{
+		<hex>
+		02 60 d8 f6 bd bf d8 f6 f6 bf 00 00 20 f7 e9 be
+		30 46 00 f0 01 f9 01 20 bd e8 f0 81 00 f0 54 f9
+		4b f7 eb ff e0 f6 1e b9 50 46 00 f0 6f f9 10 b1
+		20 7a 25 f7 77 bf 25 f7 8b bf ff 2d 24 f7 7a be
+		38 46 50 f7 f5 fa 05 46 00 f0 be f9 4f f0 01 09
+		e0 f6 d0 bf 30 46 e1 f6 a3 fa 50 f7 66 fe 00 f0
+		c3 f9 50 46 bd e8 f0 87 d0 04 04 0c 40 46 51 f7
+		6c fd 03 4f df f8 0c 80 d8 f8 08 10 27 f7 fe bc
+		fd 07 21 00 1d 08 21 00 20 46 01 b4 00 f0 dc f9
+		01 bc bd e8 f0 41 7d f7 db bc 48 46 29 46 32 46
+		04 b0 bd e8 f0 47 00 f0 dd b9 00 00 bd e8 10 40
+		00 f0 1e ba 02 28 02 d0 04 28 06 d0 0c e0 07 48
+		01 68 41 f4 c0 61 01 60 06 e0 06 49 04 48 08 60
+		06 49 05 48 c1 f8 50 01 00 20 70 47 38 0d 65 00
+		a5 04 13 00 7c 4a 20 00 41 06 13 00 40 d7 20 00
+		08 b5 00 f0 25 fa 0b 48 09 49 01 60 69 46 0a 20
+		26 f7 37 fb 00 28 0a d0 00 98 01 04 06 48 01 68
+		02 d5 41 f0 02 01 01 e0 21 f0 02 01 01 60 08 bd
+		d4 62 21 00 e8 05 20 00 d4 05 20 00 38 b5 0e 4c
+		04 23 6a 46 01 21 0c 20 25 69 d9 f6 69 fa 00 98
+		21 69 50 30 08 44 08 22 08 a1 20 61 4b f7 e2 fd
+		38 b1 00 20 18 b1 00 21 01 20 d9 f6 75 fc 25 61
+		38 bd 01 20 f6 e7 00 00 d4 06 20 00 42 52 43 4d
+		63 66 67 41 00 00 00 00 70 b5 06 4d 06 4c ff f7
+		d5 ff 1c b1 21 46 28 46 51 f7 93 fc 04 49 03 48
+		08 60 70 bd d4 62 21 00 00 00 00 00 b5 03 13 00
+		04 59 20 00 30 b4 00 24 0c 60 05 2b 0e da 01 2b
+		0c d0 02 2b 0a d0 03 2b 08 d1 33 2a 06 d1 06 4d
+		2c 68 0c 60 6d 68 4d 60 00 2c 02 d1 30 bc 5d f7
+		93 bc 30 bc 70 47 00 00 bc 62 21 00 10 b5 0a 78
+		04 2a 10 d1 09 4a 12 68 d2 05 0a d5 08 4b 09 4c
+		02 68 1b 88 24 88 1c 44 a2 42 02 d3 d1 1a 01 60
+		01 e0 02 20 08 70 01 20 10 bd 00 00 a0 2c 20 00
+		2a 42 20 00 28 42 20 00 06 49 0a 78 00 2a 08 d0
+		c9 78 49 06 05 d5 04 49 09 78 89 07 01 d5 03 49
+		08 60 70 47 b0 2c 20 00 1a 34 20 00 20 04 36 00
+		1c 4a 01 29 11 70 00 d1 50 70 70 47 70 b5 06 46
+		0c 00 4f f0 00 05 02 d0 51 f7 73 fc 05 46 16 48
+		02 68 32 43 02 60 03 d0 01 21 09 20 ff f7 e8 ff
+		00 2c 04 d0 28 46 bd e8 70 40 51 f7 66 bc 70 bd
+		70 b5 06 46 0c 00 4f f0 00 05 02 d0 51 f7 59 fc
+		05 46 09 48 02 68 b2 43 02 60 03 d1 00 21 09 20
+		ff f7 ce ff 00 2c 04 d0 28 46 bd e8 70 40 51 f7
+		4c bc 70 bd 53 36 20 00 c4 62 21 00 01 48 00 68
+		70 47 00 00 c4 62 21 00 01 21 88 1e ff f7 d8 bf
+		30 b5 09 30 b0 f8 03 50 43 79 c4 88 01 89 03 b1
+		29 b9 08 48 80 78 c0 f3 c2 00 01 28 06 d0 06 48
+		05 80 c4 70 84 70 83 71 01 71 30 bd 12 20 50 71
+		30 bd 00 00 0c 36 20 00 54 a1 20 00 10 b5 00 f1
+		09 04 c0 1c 50 f7 15 fc 01 6a 01 20 b1 f8 d0 10
+		49 04 02 d4 e1 8e 49 07 05 d1 22 68 61 68 8a 42
+		01 d0 0a b1 11 b9 10 bd 00 29 fc d1 00 20 10 bd
+		70 b5 00 f1 09 04 b0 f8 3d 50 90 f8 41 60 c0 1c
+		50 f7 f7 fb 01 6a 00 20 b1 f8 d0 20 52 04 25 d4
+		23 68 4f f4 fa 52 5b 1c 00 d1 22 60 63 68 5b 1c
+		00 d1 62 60 d1 f8 e4 30 23 f4 00 03 43 f0 00 43
+		c1 f8 e4 30 23 68 93 42 05 d0 63 68 93 42 02 d0
+		e2 8e 52 07 03 d0 e2 8e c1 f8 d8 20 70 bd 00 21
+		12 24 08 46 66 f7 9b fa 20 46 70 bd 22 68 c1 f8
+		04 21 62 68 c1 f8 08 21 a1 f8 0c 51 81 f8 10 61
+		e2 8e a1 f8 0e 21 70 bd 10 b5 00 f0 23 f8 05 49
+		09 78 88 42 05 d3 01 21 bd e8 10 40 02 20 ff f7
+		35 bf 10 bd d0 62 21 00 10 b5 51 f7 22 f8 08 4c
+		21 78 88 42 04 d3 00 f0 0d f8 21 78 88 42 05 d2
+		01 21 bd e8 10 40 02 20 ff f7 3a bf 10 bd 00 00
+		d0 62 21 00 70 b5 00 24 25 46 0a 4e 0c e0 20 46
+		4f f7 2c fb 38 b1 41 6c c9 07 04 d0 b0 f8 42 00
+		01 28 00 d1 6d 1c 64 1c 30 78 84 42 ef d3 28 46
+		70 bd 00 00 75 34 20 00 10 b5 50 f7 f2 ff 1f 49
+		09 78 88 42 05 d3 01 21 bd e8 10 40 02 20 ff f7
+		f5 be 10 bd 2d e9 f0 41 0c 46 16 46 80 46 4f f7
+		05 fb 07 46 b0 f8 40 50 01 20 18 f7 30 f8 1c b1
+		13 48 00 68 00 04 0d d5 32 46 29 46 00 20 d3 f6
+		58 fa 3c b9 00 22 39 46 09 20 67 f7 b7 fd 40 46
+		4f f7 87 fc 50 f7 c5 ff 08 4c 21 78 88 42 04 d3
+		ff f7 b0 ff 21 78 88 42 05 d2 bd e8 f0 41 01 21
+		02 20 ff f7 dd be bd e8 f0 81 00 00 d0 62 21 00
+		34 4d 20 00 10 b5 ac f7 cd fd ac f7 57 fb 01 20
+		ac f7 cc fd bd e8 10 40 01 20 ac f7 c9 bd 00 00
+		10 b5 11 4c 4f f4 fa 63 01 22 20 68 0f 49 00 68
+		20 30 39 f7 e8 fa 20 68 00 68 90 f8 c6 00 0b 28
+		0d d3 1b f7 21 fa 50 b9 20 68 00 68 90 f8 0d 01
+		10 f0 30 0f 03 d0 bd e8 10 40 fd f6 21 bb bd e8
+		10 40 fc f6 eb bc 00 00 b8 3d 20 00 f1 63 06 00
+	} END_COMMENTED_BYTES
+}
+DIRECT_LOAD  = "INIT_AREA from tier2/Generic/UART/37_4MHz/wlcsp_ref3_dLNA_wiced/bld/CM/43012_ram_ext.elf"
+{
+	"Address" = 0x130840
+	"Data" =
+	COMMENTED_BYTES
+	{
+		<hex>
+		70 b5 00 24 12 4d 20 e0 12 48 02 19 11 68 c1 f3
+		17 00 09 0e 0a d0 01 29 0b d0 02 29 09 d0 03 29
+		0b d0 04 29 09 d0 05 29 0b d0 0d e0 51 68 01 60
+		0a e0 51 68 8f f7 50 fa 06 e0 51 68 8f f7 62 fa
+		02 e0 51 68 8f f7 6a fa 08 34 ac 42 dc d3 70 bd
+		70 00 00 00 98 08 13 00
+	} END_COMMENTED_BYTES
+}
+DIRECT_LOAD  = "INIT_PATCH_TABLE from tier2/Generic/UART/37_4MHz/wlcsp_ref3_dLNA_wiced/bld/CM/43012_ram_ext.elf"
+{
+	"Address" = 0x130898
+	"Data" =
+	COMMENTED_BYTES
+	{
+		<hex>
+		dd 98 00 01 dd 04 13 00 71 92 00 02 01 03 13 00
+		dd 92 00 02 07 03 13 00 d9 10 05 02 0d 03 13 00
+		d5 5c 04 02 11 03 13 00 61 05 01 02 1d 03 13 00
+		15 62 05 02 29 03 13 00 25 50 05 02 3b 03 13 00
+		e9 12 01 02 41 03 13 00 85 18 08 02 55 03 13 00
+		69 7d 05 02 69 03 13 00 d1 e0 0a 02 89 03 13 00
+		fd de 0a 02 9b 03 13 00 65 65 06 02 ad 03 13 00
+	} END_COMMENTED_BYTES
+}
+ENTRY "Data" = "SRAM_AREA from tier2/Generic/UART/37_4MHz/wlcsp_ref3_dLNA_wiced/bld/CM/43012_ram_ext.elf"
+{
+	"Address" = 0x2162BC
+	"Data" =
+	COMMENTED_BYTES
+	{
+		<hex>
+		d1 05 13 00 0a 00 06 00 00 00 00 00 00 00 00 00
+		00 00 00 00
+	} END_COMMENTED_BYTES
+}
+ENTRY "Function Call"
+{
+	"Address" = 0x130479
+}
