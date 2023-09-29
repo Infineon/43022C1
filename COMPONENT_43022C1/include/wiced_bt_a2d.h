@@ -40,9 +40,11 @@
 #include "wiced_bt_sdp.h"
 
 /**
- * @cond DUAL_MODE
- * @addtogroup  wicedbt_av_a2d_helper      Helper Functions
- * @ingroup     wicedbt_avdt
+ *
+ * @addtogroup    wicedbt_av_a2d_helper      A2DP Helper Functions
+ * @ingroup       wicedbt_a2dp
+ *
+ * Advanced Audio Distribution Profile
  *
  * @{
  */
@@ -241,4 +243,3 @@ wiced_bt_a2d_status_t wiced_bt_set_a2dp_connection_priority( uint8_t handle, uin
 #endif
 
 /** @} wicedbt_av_a2d_helper */
-/** @endcond */

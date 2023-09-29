@@ -32,7 +32,17 @@
  */
 
 /** @file
+ *
  * Bluetooth L2CAP Application Programming Interface
+ *
+ * Logical Link Control and Adaptation Layer Protocol,
+ * referred to as L2CAP, provides connection oriented and
+ * connectionless data services to upper layer protocols with protocol
+ * multiplexing capability and segmentation and reassembly operation.
+ *
+ *  @defgroup    l2cap   Logical Link Control and Adaptaion Protocol (L2CAP)
+ *  @ingroup     wicedbt
+ *
  */
 
 #pragma once
@@ -42,16 +52,13 @@
 #include "wiced_bt_ble.h"
 
 /**
- *  @addtogroup    l2cap   Logical Link Control and Adaptation Protocol (L2CAP)
- *
- * Logical Link Control and Adaptation Layer Protocol,
- * referred to as L2CAP, provides connection oriented and
- * connectionless data services to upper layer protocols with protocol
- * multiplexing capability and segmentation and reassembly operation.
- *
- * @{
- */
-
+*  @addtogroup  l2cap_data_types        Data Types
+*  @ingroup     l2cap
+*
+*  <b> Data Types </b> for @b Logical Link Control and Adaptation Layer Protocol (L2CAP).
+*
+*  @{
+*/
 /*****************************************************************************
  *  Constants
  ****************************************************************************/
@@ -303,6 +310,8 @@ typedef uint8_t wiced_bt_l2cap_fixed_channel_mask_t[L2CAP_FIXED_CHNL_ARRAY_SIZE]
 #define L2C_BLE_IS_VALID_PSM(le_psm)  (((le_psm) != 0) && ((le_psm) <= MAXIMUM_LE_PSM))        /**< Returns true on valid LE PSM */
 /** @} L2CAP_LE_PSM_CHECK */
 
+/**@}  Data Types */
+
 /*********************************
  *  Callback Functions Prototypes
  *********************************/
@@ -548,7 +557,9 @@ extern "C"
  *  @ingroup     l2cap
  *   Commonly used API's for both BE/EDR and LE \ref l2cap "L2CAP"
  * @else
+ *  @addtogroup  l2cap_api_functions       API Functions
  *  @ingroup     l2cap
+ *  <b> API Functions </b> module for @b L2CAP.
  * @endif
  *
  * @{
@@ -665,11 +676,11 @@ wiced_bool_t wiced_bt_l2cap_ecrb_deregister(uint16_t psm);
  * @param[in] transport: BT transport for the connection
  * @param[in] bd_addr : Bluetooth device address to connect
  * @param[in] bd_addr_type: BLE_ADDR_PUBLIC or BLE_ADDR_RANDOM
- * @param[in] conn_mode : BLE connection mode
+ * @param[in] conn_mode : LE connection mode
  * @param[in] our_rx_mtu: Our RX MTU to be used for the channels
  * @param[in] our_rx_mps: Our RX MPS to be used for the channels
  * @note \p our_rx_mps must be less then \ref wiced_bt_cfg_ble_t.ble_max_rx_pdu_size or
- *  \ref wiced_bt_cfg_br_t.br_max_rx_pdu_size for BLE and BR/EDR transports respectively
+ *  \ref wiced_bt_cfg_br_t.br_max_rx_pdu_size for LE and BR/EDR transports respectively
  * @param[in] num_channels : Number of channels to be created
  * @param[in] p_rx_drb_list: list of the allocated \ref tDRB 's, one for each \p num_channels
  * @note: the size of DRB allocated must be >= \p our_rx_mtu
@@ -693,7 +704,7 @@ int wiced_bt_l2cap_ecrb_connect_req(uint16_t psm, wiced_bt_transport_t transport
 * @param[in] our_rx_mtu: Our RX MTU to be used for the channels
 * @param[in] our_rx_mps: Our RX MPS to be used for the channels
 * @note \p our_rx_mps must be less then \ref wiced_bt_cfg_ble_t.ble_max_rx_pdu_size or
-*  \ref wiced_bt_cfg_br_t.br_max_rx_pdu_size for BLE and BR/EDR transports respectively
+*  \ref wiced_bt_cfg_br_t.br_max_rx_pdu_size for LE and BR/EDR transports respectively
 * @param[out] lcid_list: list of cids (channel ids) which will be started as received in
 *                        \ref wiced_bt_l2cap_ecrb_connect_ind
 * @note       The CID list in \p lcid_list must match the CID list returned in the callback.
@@ -719,7 +730,7 @@ void wiced_bt_l2cap_ecrb_ConnectRsp(uint16_t result, uint8_t trans_id, int16_t o
  *     @note If \p new_rx_mts is zero, no change to MPS is requested.
  *           Otherwise \p new_rx_mps must be larger than the old MPS for all channels.
  *     @note \p new_rx_mps must be less then \ref wiced_bt_cfg_ble_t.ble_max_rx_pdu_size or
-*            \ref wiced_bt_cfg_br_t.br_max_rx_pdu_size for BLE and BR/EDR transports respectively
+*            \ref wiced_bt_cfg_br_t.br_max_rx_pdu_size for LE and BR/EDR transports respectively
 *
  * @param[in] num_channels : Number of channels to be created
  * @param[in] lcid_list : list of channels to be reconfigured
@@ -1067,10 +1078,11 @@ uint8_t wiced_bt_l2cap_get_chnl_fcr_mode (uint16_t lcid);
 
 /**
  * @if DUAL_MODE
- *  @addtogroup  l2cap_le_api_functions       BLE
+ *  @addtogroup  l2cap_le_api_functions       LE
  *  @ingroup     l2cap
  *  API's used for LE \ref l2cap "L2CAP".
  * @else
+ *  @addtogroup  l2cap_api_functions       API Functions
  *  @ingroup     l2cap
  * @endif
  *
@@ -1079,7 +1091,7 @@ uint8_t wiced_bt_l2cap_get_chnl_fcr_mode (uint16_t lcid);
 
 
 /**
- *  @brief          Cancel a pending connection attempt to a BLE device.
+ *  @brief          Cancel a pending connection attempt to a LE device.
  *
  *  @param[in]      rem_bda : BD Address of remote
  *
@@ -1089,7 +1101,7 @@ wiced_bool_t wiced_bt_l2cap_cancel_ble_connect_req (wiced_bt_device_address_t re
 
 
 /**
- *  @brief          Update BLE connection parameters.
+ *  @brief          Update LE connection parameters.
  *
  *  @param[in]      rem_bdRa    : Remote BD Address
  *  @param[in]      min_int     : Min interval, measured in units of 1.25 ms
@@ -1103,7 +1115,7 @@ wiced_bool_t wiced_bt_l2cap_update_ble_conn_params (wiced_bt_device_address_t re
 
 
 /**
- *  @brief          Enable or disable updating BLE connection params based on the request from the peer.
+ *  @brief          Enable or disable updating LE connection params based on the request from the peer.
  *
  *  @param[in]      rem_bda: Remote Bd Address
  *  @param[in]      enable: TRUE to enable,FALSE to disable.

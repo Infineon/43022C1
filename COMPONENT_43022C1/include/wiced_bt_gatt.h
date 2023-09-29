@@ -495,6 +495,14 @@ typedef uint8_t wiced_bt_gatt_permission_t;
 #define GATTDB_CHAR_EXTENDED_PROP_RELIABLE             (0x1 << 0)  /**< GATT Characteristic Extended Properties (see Vol 3, Part G, 3.3.3.1) */
 #define GATTDB_CHAR_EXTENDED_PROP_WRITABLE_AUXILIARIES (0x1 << 1)  /**< GATT Characteristic Extended Properties (see Vol 3, Part G, 3.3.3.1) */
 
+#define LEGATTDB_CHAR_PROP_READ                 GATTDB_CHAR_PROP_READ
+#define LEGATTDB_CHAR_PROP_NOTIFY               GATTDB_CHAR_PROP_NOTIFY
+#define LEGATTDB_CHAR_PROP_INDICATE             GATTDB_CHAR_PROP_INDICATE
+#define LEGATTDB_PERM_NONE                      GATTDB_PERM_NONE
+#define LEGATTDB_PERM_READABLE                  GATTDB_PERM_READABLE
+#define LEGATTDB_PERM_WRITE_REQ                 GATTDB_PERM_WRITE_REQ
+#define LEGATTDB_CHAR_PROP_WRITE                GATTDB_CHAR_PROP_WRITE
+
 /** Conversion macros */
 #define BIT16_TO_8( val ) \
     (uint8_t)(  (val)        & 0xff),/* LSB */ \
@@ -1041,10 +1049,10 @@ extern "C"
  */
 
 /**
- * BLE (Bluetooth Low Energy) Specific functions.
+ * Bluetooth Low Energy Specific functions.
  *
  * @if DUAL_MODE
- * @addtogroup gatt_le BLE (Bluetooth Low Energy)
+ * @addtogroup gatt_le Bluetooth Low Energy
  * @ingroup gatt_common_api
  * @endif
  */
@@ -1469,7 +1477,7 @@ void wiced_bt_gatt_set_peer_caching_status(uint16_t conn_id, wiced_bt_gatt_cachi
  *  @ingroup gatt_client_api_functions
 
  *  @note Allowed mtu range is 23 upto \ref wiced_bt_cfg_ble_t.ble_max_rx_pdu_size for
- *  BLE links as configured in #wiced_bt_cfg_settings_t
+ *  LE links as configured in #wiced_bt_cfg_settings_t
  *
 */
 wiced_bt_gatt_status_t wiced_bt_gatt_client_configure_mtu (uint16_t conn_id, uint16_t mtu);

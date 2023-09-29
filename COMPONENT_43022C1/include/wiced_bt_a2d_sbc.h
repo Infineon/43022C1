@@ -38,9 +38,8 @@
 #pragma once
 
 /**
- * @cond DUAL_MODE
  * @addtogroup  wicedbt_a2dp_sbc    A2DP SBC Support
- * @ingroup     wicedbt_av_a2d_helper
+ * @ingroup     wicedbt_a2dp
  * This section describes A2DP Low complexity subband codec (SBC) API
  * @{
  */
@@ -228,4 +227,3 @@ void wiced_bt_a2d_pars_sbc_mpl_hdr(uint8_t *p_src, wiced_bool_t *p_frag,
 #endif
 
 /** @} wicedbt_a2dp_sbc */
-/* @endcond*/

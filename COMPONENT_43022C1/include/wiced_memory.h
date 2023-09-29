@@ -34,6 +34,7 @@
 /** @file
  *
  *  \addtogroup wiced_mem Memory Management
+ *  \ingroup wicedsys
  *
  *  @{
  * Helper APIs to create heaps and pools and allocate/free buffers from those pools or heaps.
@@ -46,7 +47,7 @@
 #include "wiced_result.h"
 
 #define memcpy   __aeabi_memcpy
-#define memset  __aeabi_memset
+#define memset(dest,val,len) __aeabi_memset(dest, len, val)
 #define memmove  mpaf_memmove
 
 void * __aeabi_memcpy(void *dst, const void *src, int len);

@@ -37,8 +37,8 @@
  *
  */
  /**
-  * @cond DUAL_MODE
   * @addtogroup  rfcomm_api_functions       RFCOMM
+  * @ingroup     wicedbt
   *
   * The RFCOMM protocol provides emulation of serial ports over the L2CAP protocol. The protocol is
   * based on the ETSI standard GSM 7.1.0. RFCOMM is a simple transport protocol, with additional
@@ -342,4 +342,3 @@ wiced_bt_rfcomm_result_t wiced_bt_rfcomm_check_connection (uint16_t handle, wice
 #endif
 
 /**@}rfcomm_api_functions */
-/**  @endcond */

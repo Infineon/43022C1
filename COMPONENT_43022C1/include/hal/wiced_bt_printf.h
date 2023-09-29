@@ -36,7 +36,12 @@
  *
  */
 
-
+ /**
+ * @addtogroup  trace_utils AIROC Trace Utils
+ * @ingroup     ingroup wicedsys
+ *
+ * @{
+*/
 #pragma once
 
 #include <stdarg.h>
@@ -84,7 +89,7 @@ void wiced_bt_trace_enable(void);
  */
 void wiced_set_debug_uart ( wiced_debug_uart_types_t uart );
 
-/* @} */
+/* @} trace_utils */
 
 extern void wiced_print_trace(char* p_trace_buf, int trace_buf_len, wiced_bt_trace_type_t trace_type);
 extern void wiced_bt_trace_array( const char *string, const uint8_t* array, const uint16_t len );

@@ -94,6 +94,33 @@ ENTRY "Data" = "g_minExistingConnNumForBtIsrClockIncreasement"
         01
     } END_COMMENTED_BYTES
 }
+ENTRY "Data" = "ulp_rl_maxBloodyResolve"
+{
+    "Address" = 0x002034ca
+    "Data" =
+    COMMENTED_BYTES
+    {
+        <hex>
+        04
+    } END_COMMENTED_BYTES
+}
+ENTRY "PC Workarounds"
+{
+    "PC Workaround flags" = 0x0020
+    "Pad1" = 0
+    "Pad2" = 0
+    "PC Workaround Extension"   = 0x00000000
+}
+ENTRY "Data" = "syncMasterBleIntervalMax"
+{
+    "Address" = 0x002044ce
+    "Data" =
+    COMMENTED_BYTES
+    {
+        <hex>
+        FF FF
+    } END_COMMENTED_BYTES
+}
 ENTRY "Data" = "Default_TxPath"
 {
     "Address" = 0x0020096d
@@ -2984,7 +3011,7 @@ DIRECT_LOAD  = "INIT_AREA from tier2/Generic/UART/37_4MHz/fcbga_ref3_dLNA_wiced/
 		0b d0 04 29 09 d0 05 29 0b d0 0d e0 51 68 01 60
 		0a e0 51 68 8f f7 50 fa 06 e0 51 68 8f f7 62 fa
 		02 e0 51 68 8f f7 6a fa 08 34 ac 42 dc d3 70 bd
-		70 00 00 00 98 08 13 00
+		78 00 00 00 98 08 13 00
 	} END_COMMENTED_BYTES
 }
 DIRECT_LOAD  = "INIT_PATCH_TABLE from tier2/Generic/UART/37_4MHz/fcbga_ref3_dLNA_wiced/bld/CM/43012_ram_ext.elf"
@@ -3001,6 +3028,7 @@ DIRECT_LOAD  = "INIT_PATCH_TABLE from tier2/Generic/UART/37_4MHz/fcbga_ref3_dLNA
 		e9 12 01 02 41 03 13 00 85 18 08 02 55 03 13 00
 		69 7d 05 02 69 03 13 00 d1 e0 0a 02 89 03 13 00
 		fd de 0a 02 9b 03 13 00 65 65 06 02 ad 03 13 00
+		08 d4 03 04 03 d2 01 6b
 	} END_COMMENTED_BYTES
 }
 ENTRY "Data" = "SRAM_AREA from tier2/Generic/UART/37_4MHz/fcbga_ref3_dLNA_wiced/bld/CM/43012_ram_ext.elf"

@@ -41,18 +41,23 @@
 #include "wiced_bt_sdp.h"
 #include "wiced_bt_avrc_defs.h"
 #include "wiced_bt_l2c.h"
-
+/**
+ * @addtogroup  wicedbt_av          Audio / Video
+ * @ingroup     wicedbt
+ *
+ * This section describes the API to use various audio/video profiles, such as A2DP, AVDTP, AVRCP, HFP.
+ *
+ * @{
+*/
 
 /**
- * @cond DUAL_MODE
- * @defgroup  wicedbt_avrc        Audio/Video Remote Control (AVRC)
  *
  * This section describes the API's to use Audio/Video Remote Control Profile commands
  * which use underlying AVCT protocol.
  *
  * @addtogroup  wicedbt_avrc    Audio/Video Remote Control (AVRC)
  *
- * @ingroup     wicedbt
+ * @ingroup     wicedbt_av
  *
  * @{
 */
@@ -622,9 +627,8 @@ int avrc_read_name_from_stream(uint8_t *p_name_stream, uint16_t stream_len, wice
 
 wiced_bool_t wiced_bt_avrc_set_browse_drb(uint8_t handle, tDRB *p_drb, uint16_t payload_len, wiced_bt_l2cap_drb_release_cb *p_unreg_cb);
 
-/**@} wicedbt */
-/* @endcond*/
-
 #ifdef __cplusplus
 }
 #endif
+/**@} wicedbt_avrc */
+/**@} wicedbt_av */

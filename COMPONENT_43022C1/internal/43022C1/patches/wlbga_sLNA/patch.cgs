@@ -94,6 +94,33 @@ ENTRY "Data" = "g_minExistingConnNumForBtIsrClockIncreasement"
         01
     } END_COMMENTED_BYTES
 }
+ENTRY "Data" = "ulp_rl_maxBloodyResolve"
+{
+    "Address" = 0x002034ca
+    "Data" =
+    COMMENTED_BYTES
+    {
+        <hex>
+        04
+    } END_COMMENTED_BYTES
+}
+ENTRY "PC Workarounds"
+{
+    "PC Workaround flags" = 0x0020
+    "Pad1" = 0
+    "Pad2" = 0
+    "PC Workaround Extension"   = 0x00000000
+}
+ENTRY "Data" = "syncMasterBleIntervalMax"
+{
+    "Address" = 0x002044ce
+    "Data" =
+    COMMENTED_BYTES
+    {
+        <hex>
+        FF FF
+    } END_COMMENTED_BYTES
+}
 ENTRY "Data" = "Default_TxPath"
 {
     "Address" = 0x0020096d
@@ -3103,60 +3130,60 @@ ENTRY "Tssical Parameter Table TX20"
     "EdrTarget[5][6]" = 530
     "EdrTarget[5][7]" = 530
     "EdrTarget[5][8]" = 530
-    "BleTarget[0][0]" = 780
-    "BleTarget[0][1]" = 780
-    "BleTarget[0][2]" = 780
-    "BleTarget[0][3]" = 780
-    "BleTarget[0][4]" = 780
-    "BleTarget[0][5]" = 780
-    "BleTarget[0][6]" = 780
-    "BleTarget[0][7]" = 780
-    "BleTarget[0][8]" = 780
-    "BleTarget[1][0]" = 740
-    "BleTarget[1][1]" = 740
-    "BleTarget[1][2]" = 740
-    "BleTarget[1][3]" = 740
-    "BleTarget[1][4]" = 740
-    "BleTarget[1][5]" = 740
-    "BleTarget[1][6]" = 740
-    "BleTarget[1][7]" = 740
-    "BleTarget[1][8]" = 740
-    "BleTarget[2][0]" = 750
-    "BleTarget[2][1]" = 750
-    "BleTarget[2][2]" = 750
-    "BleTarget[2][3]" = 750
-    "BleTarget[2][4]" = 750
-    "BleTarget[2][5]" = 750
-    "BleTarget[2][6]" = 750
-    "BleTarget[2][7]" = 750
-    "BleTarget[2][8]" = 750
-    "BleTarget[3][0]" = 780
-    "BleTarget[3][1]" = 780
-    "BleTarget[3][2]" = 780
-    "BleTarget[3][3]" = 780
-    "BleTarget[3][4]" = 780
-    "BleTarget[3][5]" = 780
-    "BleTarget[3][6]" = 780
-    "BleTarget[3][7]" = 780
-    "BleTarget[3][8]" = 780
-    "BleTarget[4][0]" = 800
-    "BleTarget[4][1]" = 800
-    "BleTarget[4][2]" = 800
-    "BleTarget[4][3]" = 800
-    "BleTarget[4][4]" = 800
-    "BleTarget[4][5]" = 800
-    "BleTarget[4][6]" = 800
-    "BleTarget[4][7]" = 800
-    "BleTarget[4][8]" = 800
-    "BleTarget[5][0]" = 800
-    "BleTarget[5][1]" = 800
-    "BleTarget[5][2]" = 800
-    "BleTarget[5][3]" = 800
-    "BleTarget[5][4]" = 800
-    "BleTarget[5][5]" = 800
-    "BleTarget[5][6]" = 800
-    "BleTarget[5][7]" = 800
-    "BleTarget[5][8]" = 800
+    "BleTarget[0][0]" = 1260
+    "BleTarget[0][1]" = 1260
+    "BleTarget[0][2]" = 1260
+    "BleTarget[0][3]" = 1260
+    "BleTarget[0][4]" = 1260
+    "BleTarget[0][5]" = 1260
+    "BleTarget[0][6]" = 1260
+    "BleTarget[0][7]" = 1260
+    "BleTarget[0][8]" = 1260
+    "BleTarget[1][0]" = 1100
+    "BleTarget[1][1]" = 1100
+    "BleTarget[1][2]" = 1100
+    "BleTarget[1][3]" = 1100
+    "BleTarget[1][4]" = 1100
+    "BleTarget[1][5]" = 1100
+    "BleTarget[1][6]" = 1100
+    "BleTarget[1][7]" = 1100
+    "BleTarget[1][8]" = 1100
+    "BleTarget[2][0]" = 1200
+    "BleTarget[2][1]" = 1200
+    "BleTarget[2][2]" = 1200
+    "BleTarget[2][3]" = 1200
+    "BleTarget[2][4]" = 1200
+    "BleTarget[2][5]" = 1200
+    "BleTarget[2][6]" = 1200
+    "BleTarget[2][7]" = 1200
+    "BleTarget[2][8]" = 1200
+    "BleTarget[3][0]" = 1240
+    "BleTarget[3][1]" = 1240
+    "BleTarget[3][2]" = 1240
+    "BleTarget[3][3]" = 1240
+    "BleTarget[3][4]" = 1240
+    "BleTarget[3][5]" = 1240
+    "BleTarget[3][6]" = 1240
+    "BleTarget[3][7]" = 1240
+    "BleTarget[3][8]" = 1240
+    "BleTarget[4][0]" = 1320
+    "BleTarget[4][1]" = 1320
+    "BleTarget[4][2]" = 1320
+    "BleTarget[4][3]" = 1320
+    "BleTarget[4][4]" = 1320
+    "BleTarget[4][5]" = 1320
+    "BleTarget[4][6]" = 1320
+    "BleTarget[4][7]" = 1320
+    "BleTarget[4][8]" = 1320
+    "BleTarget[5][0]" = 1060
+    "BleTarget[5][1]" = 1060
+    "BleTarget[5][2]" = 1060
+    "BleTarget[5][3]" = 1060
+    "BleTarget[5][4]" = 1060
+    "BleTarget[5][5]" = 1060
+    "BleTarget[5][6]" = 1060
+    "BleTarget[5][7]" = 1060
+    "BleTarget[5][8]" = 1060
 }
 ENTRY "Data"="CCDB_Fromcgs"
 {
@@ -3332,12 +3359,12 @@ ENTRY "Data" = "txpwr_tca_from_cgs"
            A5 A5 A5 A5 A5 A5 A5 A5 A5
            BD BD BD BD BD BD BD BD BD
            B3 B3 B3 B3 B3 B3 B3 B3 B3
+           6d 6d 6d 6d 6d 6d 6d 6d 6d
+           5f 5f 5f 5f 5f 5f 5f 5f 5f
            75 75 75 75 75 75 75 75 75
-           69 69 69 69 69 69 69 69 69
-           88 88 88 88 88 88 88 88 88
-           B0 B0 B0 B0 B0 B0 B0 B0 B0
-           C5 C5 C5 C5 C5 C5 C5 C5 C5
-           F0 F0 F0 F0 F0 F0 F0 F0 F0
+           98 98 98 98 98 98 98 98 98
+           B8 B8 B8 B8 B8 B8 B8 B8 B8
+           B5 B5 B5 B5 B5 B5 B5 B5 B5
         } END_COMMENTED_BYTES
 }
 ENTRY "Data"="freq_list_from_cgs"
@@ -3500,7 +3527,7 @@ DIRECT_LOAD  = "INIT_AREA from tier2/Generic/UART/37_4MHz/wlbga_ref3_sLNA_wiced/
 		0b d0 04 29 09 d0 05 29 0b d0 0d e0 51 68 01 60
 		0a e0 51 68 8f f7 48 fa 06 e0 51 68 8f f7 5a fa
 		02 e0 51 68 8f f7 62 fa 08 34 ac 42 dc d3 70 bd
-		68 00 00 00 a8 08 13 00
+		70 00 00 00 a8 08 13 00
 	} END_COMMENTED_BYTES
 }
 DIRECT_LOAD  = "INIT_PATCH_TABLE from tier2/Generic/UART/37_4MHz/wlbga_ref3_sLNA_wiced/bld/CM/43012_ram_ext.elf"
@@ -3516,7 +3543,7 @@ DIRECT_LOAD  = "INIT_PATCH_TABLE from tier2/Generic/UART/37_4MHz/wlbga_ref3_sLNA
 		25 50 05 02 4b 03 13 00 e9 12 01 02 51 03 13 00
 		85 18 08 02 65 03 13 00 69 7d 05 02 79 03 13 00
 		d1 e0 0a 02 99 03 13 00 fd de 0a 02 ab 03 13 00
-		65 65 06 02 bd 03 13 00
+		65 65 06 02 bd 03 13 00 08 d4 03 04 03 d2 01 6b
 	} END_COMMENTED_BYTES
 }
 ENTRY "Data" = "SRAM_AREA from tier2/Generic/UART/37_4MHz/wlbga_ref3_sLNA_wiced/bld/CM/43012_ram_ext.elf"

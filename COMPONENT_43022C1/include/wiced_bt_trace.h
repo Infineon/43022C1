@@ -32,6 +32,18 @@
 */
 // Trace definitions for script application.
 //
+
+/** @file
+ *
+* \defgroup trace_utils AIROC Trace Utils
+* \ingroup wicedsys
+* @{
+*
+*Trace Utilities
+*
+* Support for applications to send debug or information messages to debug UART destinations.
+ */
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -42,11 +54,6 @@ extern "C" {
 }
 #endif
 
-/**
- *  @ingroup     gentypes
- *
- *  @{
- */
 /** Debug trace macro */
 #ifdef WICED_BT_TRACE_ENABLE
 
@@ -62,3 +69,5 @@ extern "C" {
 #define WICED_BT_TRACE_ARRAY(ptr,len,string)
 #define WICED_BT_TRACE_CRIT
 #endif
+
+/** @} trace_utils */

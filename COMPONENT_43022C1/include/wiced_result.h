@@ -161,18 +161,19 @@ extern "C" {
  * @endcond
  ******************************************************/
 
+/*************************************************************************/
 /**
- *  Common Bluetooth definitions
- *  @defgroup gentypes   Common Bluetooth definitions
- *  @addtogroup  Result       WICED result
- *  @ingroup     gentypes
+ *  @addtogroup  Result       AIROC Result Codes
+ *  @ingroup     wicedsys
  *
- *  <b> Result types </b> See wiced_result.h
+ *  <b> Result types</b>. @b
+ *  Result enums, macros with prefix WICED_ to WICED_RESULT_LIST and WICED_BT_ to BT_RESULT_LIST.
+ *  See wiced_result.h and wiced_bt_constants.h
  *
  *  @{
  */
-
-/** WICED result */
+/*************************************************************************/
+/** AIROC result */
 typedef enum
 {
     WICED_RESULT_LIST ( WICED_ )                 /**< Generic Error */

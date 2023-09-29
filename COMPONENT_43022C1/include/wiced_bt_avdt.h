@@ -43,12 +43,11 @@
 #include "wiced_bt_types.h"
 
 /**
- * @cond DUAL_MODE
  * @defgroup  wicedbt_avdt        Audio/Video Distribution Transport (AVDT)
  *
  * This section describes the API's of Audio/Video Distribution Transport protocol.
  * @addtogroup wicedbt_avdt Audio/Video Distribution Transport (AVDT)
- * @ingroup wicedbt
+ * @ingroup wicedbt_av
  * @{
  */
 
@@ -1088,4 +1087,3 @@ uint16_t wiced_bt_avdt_send_report(uint8_t handle, AVDT_REPORT_TYPE type,
 /**
  * @} wicedbt_avdt
  */
- /* @endcond*/

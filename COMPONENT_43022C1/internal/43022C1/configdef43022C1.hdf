@@ -1,5 +1,5 @@
 # DO NOT EDIT MANUALLY! FW2 VERSION
-# Automatically generated on Mon Jun  5 21:25:36 2023 from firmware 3.2.24
+# Automatically generated on Wed Sep 27 19:48:32 2023 from firmware 3.2.24
 SECTION "Config Data Entries" 0
 {
      COMMAND "Config layout" 0x0100
@@ -4794,7 +4794,7 @@ SECTION "Config Data Entries" 0
                  {0x0200, "Disable USB MSFT OS descriptor support"},
                  {0x0400, "Enable USB Resume Duration"}
              }
-             default = 0x0001;
+             default = 0x0020;
          PARAM "Avoid 5 slot packets"
              uint8
              doc "DEPRECATED! Do not send back to back 5 slot packets immediately after hearing from a sniff link."
@@ -4812,6 +4812,27 @@ SECTION "Config Data Entries" 0
              uint8
              doc "Enable the USB resume duration to be set by the configuration."
              enabled_if ( ("PC Workaround flags" & 0x0400)=0x0400);
+         PARAM "Pad1"
+             uint8
+             doc "Pad1"
+                 "Default is 0 ";
+         PARAM "Pad2"
+             uint16
+             doc "Pad2"
+                 "Default is 0 ";
+         PARAM "PC Workaround Extension"
+             uint32
+             doc "PC workaround extension enable flags"
+                 "  00000002: LE track sensor change to send GONE event on LE scan disable"
+                 "  00000004: Enable Flow timer for devices that continuously flow us off"
+                 "  00000008: Don't send Zero Length HCI ACL Packets"
+             bitmap
+             {
+                 {0x00000002, "LE track sensor change to send GONE event on LE scan disable"},
+                 {0x00000004, "Enable Flow timer for devices that continuously flow us off"},
+                 {0x00000008, "Don't send Zero Length HCI ACL Packets"}
+             }
+             default = 0x00000000;
      }
 
      COMMAND "Audio Byte Pool Size" 0x030A

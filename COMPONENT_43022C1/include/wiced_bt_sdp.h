@@ -42,8 +42,8 @@
 #include "wiced_bt_sdp_defs.h"
 
 /**
- * @cond DUAL_MODE
  * @addtogroup  sdp     Service Discovery Protocol (SDP)
+ * @ingroup     wicedbt
  *
  * The Service Discovery Protocol (SDP) allows a device to discover services offered by other devices, and
  * their associated parameters. For example, when you use a mobile phone with a Bluetooth headset, the phone
@@ -599,4 +599,3 @@ wiced_bool_t wiced_bt_sdp_find_service_uuid_in_rec(wiced_bt_sdp_discovery_record
 #endif
 
 /**@} sdp */
-/* @endcond*/

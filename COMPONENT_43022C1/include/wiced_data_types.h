@@ -47,7 +47,8 @@
 #include <string.h>
 
 /**
- *  @ingroup     gentypes
+ *  @defgroup     gentypes   Common Bluetooth types
+ *  @ingroup wicedbt
  *
  *  @{
  */

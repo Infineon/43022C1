@@ -45,6 +45,11 @@
 extern "C" {
 #endif
 
+
+#ifndef BD_ADDR
+typedef uint8_t BD_ADDR[6];
+#endif
+
  /**
  *  @addtogroup  bt_types  Wiced BT Types
  *  @ingroup     gentypes
@@ -125,7 +130,7 @@ typedef uint8_t wiced_bt_features_t[BD_FEATURES_LEN]; /**< Features supported da
 #define MAX_UUID_SIZE              16  /**< Maximum UUID size - 16 bytes, and structure to hold any type of UUID. */
 
 #define BT_DB_HASH_LEN 16   /**< Database Hash length  */
-typedef uint8_t wiced_bt_db_hash_t[BT_DB_HASH_LEN]; /**< BLE database hash */
+typedef uint8_t wiced_bt_db_hash_t[BT_DB_HASH_LEN]; /**< LE database hash */
 
 #define WICED_BT_GATT_CLIENT_SUPPORTED_FEATURE_OCTET_LEN 1  /**< GATT Client Supported feature length */
 /** GATT Client Support features */
@@ -185,7 +190,7 @@ typedef struct {
  * @{
  */
 #define BT_TRANSPORT_BR_EDR         1       /**< BR/EDR transport */
-#define BT_TRANSPORT_LE             2       /**< BLE transport */
+#define BT_TRANSPORT_LE             2       /**< LE transport */
 typedef uint8_t wiced_bt_transport_t;       /**< Transport type (see @ref WICED_BT_TRANSPORT_TYPE "BT Transport Types") */
 /** @} WICED_BT_TRANSPORT_TYPE */
 
@@ -210,16 +215,16 @@ typedef uint8_t wiced_bt_device_type_t;     /**< Bluetooth device type (see @ref
 #define BLE_ADDR_PUBLIC_ID          0x02        /**< Public ID      */
 #define BLE_ADDR_RANDOM_ID          0x03        /**< Random ID      */
 
-/** BLE device address type (see @ref WICED_BT_ADDR_TYPE "BT Address Types") */
+/** LE device address type (see @ref WICED_BT_ADDR_TYPE "BT Address Types") */
 typedef uint8_t wiced_bt_ble_address_type_t;
 
 /** @} WICED_BT_ADDR_TYPE */
 
-/** Wiced Ble Address structure */
+/** Wiced LE Address structure */
 typedef struct
 {
-    wiced_bt_ble_address_type_t type;   /**< BLE Address Type */
-    wiced_bt_device_address_t   bda;    /**< BLE Address */
+    wiced_bt_ble_address_type_t type;   /**< LE Address Type */
+    wiced_bt_device_address_t   bda;    /**< LE Address */
 } wiced_bt_ble_address_t;
 
 #define LINK_KEY_LEN    16      /**< Link Key Len */

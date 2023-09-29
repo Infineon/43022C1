@@ -341,9 +341,9 @@
 #define HCI_VSC_MULTI_AV_HANDLE         0x0AAA
 #define HCI_VSC_BURST_MODE_HANDLE       0x0BBB
 
-/* BLE HCI */
+/* LE HCI */
 #define HCI_GRP_BLE_CMDS                (0x08 << 10) /* 0x2000*/
-/* Commands of BLE Controller setup and configuration */
+/* Commands of LE Controller setup and configuration */
 #define HCI_BLE_SET_EVENT_MASK          (0x0001 | HCI_GRP_BLE_CMDS) /* 0x2001 */
 #define HCI_BLE_READ_BUFFER_SIZE        (0x0002 | HCI_GRP_BLE_CMDS) /* 0x2002 */
 #define HCI_BLE_READ_LOCAL_SPT_FEAT     (0x0003 | HCI_GRP_BLE_CMDS) /* 0x2003 */
@@ -1027,7 +1027,7 @@
     33     LE BIGInfo Advertising Report event
 */
 #if BTM_BLE_PRIVACY_SPT == TRUE
-/* BLE event mask */
+/* LE event mask */
 #define HCI_BLE_EVENT_MASK_DEF "\x00\x00\x00\x02\x7f\x8f\xff\xff"
 #else
 #define HCI_BLE_EVENT_MASK_DEF "\x00\x00\x00\x02\x7F\x8f\xff\x7f"

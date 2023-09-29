@@ -37,6 +37,7 @@
  */
  /**
  * @addtogroup  wiced_bt_platform_group Bluetooth Stack Platform Interface
+ * @ingroup wicedbt
  *
  * Interface between Stack and platform.
  *
@@ -288,7 +289,7 @@ extern void wiced_bt_process_sco_data(uint8_t *pData, uint32_t length);
  */
  void wiced_bt_process_isoc_data(uint8_t *pData, uint32_t length);
 
- /**
+/**
  * Called by the porting layer on expiry of the timer to process pending timers
  *
  * @return    void

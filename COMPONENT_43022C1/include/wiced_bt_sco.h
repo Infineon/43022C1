@@ -40,9 +40,8 @@
 
 
 /**
- * @cond DUAL_MODE
  * @addtogroup  sco      Synchronous Connection Oriented (SCO) Channel
- * @ingroup     wicedbt_sco
+ * @ingroup     wicedbt_av
  *
  * @{
  */
@@ -250,4 +249,3 @@ void  wiced_bt_sco_turn_off_pcm_clock( void );
 #endif
 
 /** @} sco */
-/* @endcond*/

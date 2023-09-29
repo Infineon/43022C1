@@ -108,17 +108,17 @@ typedef struct
  * back within range*/
 typedef struct
 {
-    uint16_t                              buf_depth_ms;                  /* in msec, Max value allowed is 300 */
-    uint8_t                               start_buf_depth;               /* start playback percentage of the buffer depth */
-    uint8_t                               target_buf_depth;              /* target level percentage of the buffer depth */
-    wiced_bt_a2dp_sink_overrun_control_t  overrun_control;               /* overrun flow control flag */
-    int32_t                               adj_ppm_max;                   /* Max PPM adjustment value */
-    int32_t                               adj_ppm_min;                   /* Min PPM adjustment value */
-    int32_t                               adj_ppb_per_msec;              /* PPM adjustment per milli second */
-    int32_t                               lvl_correction_threshold_high; /* Level correction threshold high value */
-    int32_t                               lvl_correction_threshold_low;  /* Level correction threshold low value */
-    int32_t                               adj_proportional_gain;         /* Proportional component of total PPM adjustment */
-    int32_t                               adj_integral_gain;             /* Integral component of total PPM adjustment */
+    uint16_t                              buf_depth_ms;                  /**< in msec, Max value allowed is 300 */
+    uint8_t                               start_buf_depth;               /**< start playback percentage of the buffer depth */
+    uint8_t                               target_buf_depth;              /**< target level percentage of the buffer depth */
+    wiced_bt_a2dp_sink_overrun_control_t  overrun_control;               /**< overrun flow control flag */
+    int32_t                               adj_ppm_max;                   /**< Max PPM adjustment value */
+    int32_t                               adj_ppm_min;                   /**< Min PPM adjustment value */
+    int32_t                               adj_ppb_per_msec;              /**< PPM adjustment per milli second */
+    int32_t                               lvl_correction_threshold_high; /**< Level correction threshold high value */
+    int32_t                               lvl_correction_threshold_low;  /**< Level correction threshold low value */
+    int32_t                               adj_proportional_gain;         /**< Proportional component of total PPM adjustment */
+    int32_t                               adj_integral_gain;             /**< Integral component of total PPM adjustment */
 } wiced_bt_a2dp_sink_audio_tuning_params_t;
 
 

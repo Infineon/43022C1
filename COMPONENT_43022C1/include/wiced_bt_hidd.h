@@ -236,10 +236,8 @@ typedef struct wiced_bt_hidd_pwr_md
 
 
 /**
- *  @cond DUAL_MODE
  *  @addtogroup  hidd_api_functions      HID Device Role (HIDD) over BR/EDR
- *  @endcond
- *  @ingroup     wiced_bt_hid
+ *  @ingroup     wicedbt
  *
  * HIDD Functions
  * This component maps features from the USB Human Interface Definition onto Bluetooth as a profile.
@@ -349,4 +347,3 @@ wiced_bt_hidd_status_t wiced_bt_hidd_send_data(wiced_bool_t control_ch, uint8_t 
 #endif
 
 /** @} wicedbt_hidd */
-/* @endcond*/
