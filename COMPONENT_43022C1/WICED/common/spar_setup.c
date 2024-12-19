@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2023, Cypress Semiconductor Corporation (an Infineon company) or
+ * Copyright 2016-2024, Cypress Semiconductor Corporation (an Infineon company) or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -152,6 +152,13 @@ wiced_pre_init_cfg_t pre_init_cfg = {
 
 const wiced_pre_init_cfg_t *const pre_init_cfg_addr __attribute__((section(".pre_init_cfg"))) = &pre_init_cfg;
 
+#ifndef memset
+void *memset_r(void *, size_t, int);
+void *memset(void *dest, int c, size_t n)
+{
+    return memset_r(dest, n, c);
+}
+#endif
 
 __attribute__((section(".app_entry")))
 void SPAR_CRT_SETUP(void)

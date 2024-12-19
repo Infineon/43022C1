@@ -1,4 +1,4 @@
-# 43022C1 firmware build 30
-# patch entries used: 15 out of 192 elf patches, 7%
-CY_PATCH_ENTRIES_BASE=15
-# patch ram used: 1552 out of 64768 bytes, 2%
+# 43022C1 firmware build 38
+# patch entries used: 19 out of 192 elf patches, 9%
+CY_PATCH_ENTRIES_BASE=19
+# patch ram used: 1896 out of 64768 bytes, 2%

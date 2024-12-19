@@ -1,5 +1,5 @@
 /*
- * Copyright 2023, Cypress Semiconductor Corporation (an Infineon company) or
+ * Copyright 2024, Cypress Semiconductor Corporation (an Infineon company) or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -101,6 +101,7 @@ enum
     WICED_GPIO_INTERRUPT_ENABLE_MASK   = 0x0008,
     WICED_GPIO_INTERRUPT_ENABLE        = 0x0008,
     WICED_GPIO_INTERRUPT_DISABLE       = 0x0000,
+    GPIO_INTERRUPT_DISABLE             = 0x0000,
 
     /// Interrupt Config
     /// GPIO configuration bit 0:3, Summary of Interrupt enabling type
@@ -111,7 +112,11 @@ enum
     WICED_GPIO_EN_INT_FALLING_EDGE     = WICED_GPIO_INTERRUPT_ENABLE | WICED_GPIO_EDGE_TRIGGER | WICED_GPIO_TRIGGER_NEG,
     WICED_GPIO_EN_INT_BOTH_EDGE        = WICED_GPIO_INTERRUPT_ENABLE | WICED_GPIO_EDGE_TRIGGER | WICED_GPIO_EDGE_TRIGGER_BOTH,
 
-
+    GPIO_EN_INT_LEVEL_HIGH             = WICED_GPIO_INTERRUPT_ENABLE | WICED_GPIO_LEVEL_TRIGGER,
+    GPIO_EN_INT_LEVEL_LOW              = WICED_GPIO_INTERRUPT_ENABLE | WICED_GPIO_LEVEL_TRIGGER | WICED_GPIO_TRIGGER_NEG,
+    GPIO_EN_INT_RISING_EDGE            = WICED_GPIO_INTERRUPT_ENABLE | WICED_GPIO_EDGE_TRIGGER,
+    GPIO_EN_INT_FALLING_EDGE           = WICED_GPIO_INTERRUPT_ENABLE | WICED_GPIO_EDGE_TRIGGER | WICED_GPIO_TRIGGER_NEG,
+    GPIO_EN_INT_BOTH_EDGE              = WICED_GPIO_INTERRUPT_ENABLE | WICED_GPIO_EDGE_TRIGGER | WICED_GPIO_EDGE_TRIGGER_BOTH,
 
     /// GPIO Output Buffer Control and Output Value Multiplexing Control
     /// GPIO configuration bit 4:5, and 14 output enable control and

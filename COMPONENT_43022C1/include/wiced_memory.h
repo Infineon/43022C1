@@ -1,5 +1,5 @@
 /*
- * Copyright 2019-2023, Cypress Semiconductor Corporation (an Infineon company) or
+ * Copyright 2019-2024, Cypress Semiconductor Corporation (an Infineon company) or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -46,12 +46,8 @@
 #include "wiced_data_types.h"
 #include "wiced_result.h"
 
-#define memcpy   __aeabi_memcpy
-#define memset(dest,val,len) __aeabi_memset(dest, len, val)
 #define memmove  mpaf_memmove
 
-void * __aeabi_memcpy(void *dst, const void *src, int len);
-void * __aeabi_memset(void * ptr, int value, int num );
 void * mpaf_memmove ( void * destination, const void * source, int num );
 
 /* WICED does not care about the structure of the contents of a WICED buffer */
